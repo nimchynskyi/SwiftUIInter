@@ -11,7 +11,14 @@ import SwiftUI
 struct SwiftUIInterApp: App {
     var body: some Scene {
         WindowGroup {
-            MagnificationGesture()
+            NavigationStack {
+                List {
+                    NavigationLink(destination: LongPressGesture())         { Text("Long Tap") }
+                    NavigationLink(destination: MagnificationGesture())     { Text("Magnify Gesture") }
+                    NavigationLink(destination: RotationGesture())          { Text("Rotate Gesture") }
+                }
+                .navigationTitle("Gestures")
+            }
         }
     }
 }
