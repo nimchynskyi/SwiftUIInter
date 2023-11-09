@@ -11,6 +11,7 @@
 		87D0EFC92AFD3C6F00EF1672 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0EFC82AFD3C6F00EF1672 /* ContentView.swift */; };
 		87D0EFCB2AFD3C7200EF1672 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87D0EFCA2AFD3C7200EF1672 /* Assets.xcassets */; };
 		87D0EFCE2AFD3C7200EF1672 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87D0EFCD2AFD3C7200EF1672 /* Preview Assets.xcassets */; };
+		87D0EFD52AFD3CB300EF1672 /* LongPressGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0EFD42AFD3CB300EF1672 /* LongPressGesture.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		87D0EFC82AFD3C6F00EF1672 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		87D0EFCA2AFD3C7200EF1672 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87D0EFCD2AFD3C7200EF1672 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		87D0EFD42AFD3CB300EF1672 /* LongPressGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressGesture.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				87D0EFC62AFD3C6F00EF1672 /* SwiftUIInterApp.swift */,
 				87D0EFC82AFD3C6F00EF1672 /* ContentView.swift */,
+				87D0EFD42AFD3CB300EF1672 /* LongPressGesture.swift */,
 				87D0EFCA2AFD3C7200EF1672 /* Assets.xcassets */,
 				87D0EFCC2AFD3C7200EF1672 /* Preview Content */,
 			);
@@ -139,6 +142,7 @@
 			files = (
 				87D0EFC92AFD3C6F00EF1672 /* ContentView.swift in Sources */,
 				87D0EFC72AFD3C6F00EF1672 /* SwiftUIInterApp.swift in Sources */,
+				87D0EFD52AFD3CB300EF1672 /* LongPressGesture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
