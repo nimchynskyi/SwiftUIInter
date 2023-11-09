@@ -16,3 +16,9 @@
   - CGFloat ```value.rotation```
   - Type ```Angle(degrees: x)```
   - Rotation with ```spring()``` animation
+- ### 4 - Drag/Swipe
+  - ```.gesture(DragGesture())```
+  - ```onChanged``` & ```onEnded``` modifiers
+  - Edit scale & rotate on swipe (Tinder card example)
+  - Swipe up/down to show/hide (Sign Up example)
+  - Gestures with ```spring()``` animation
