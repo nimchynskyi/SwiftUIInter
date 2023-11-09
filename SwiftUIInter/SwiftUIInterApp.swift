@@ -18,6 +18,8 @@ struct SwiftUIInterApp: App {
                     NavigationLink(destination: RotationGestureView())          { Text("Rotate Gesture") }
                     NavigationLink(destination: DragGestureView())              { Text("Drag Gesture (Example 1)") }
                     NavigationLink(destination: DragGestureView2())             { Text("Drag Gesture (Example 2)") }
+                    
+                    NavigationLink(destination: ScrollViewReaderView())         { Text("ScrollViewReader") }
                 }
                 .navigationTitle("Gestures")
             }
