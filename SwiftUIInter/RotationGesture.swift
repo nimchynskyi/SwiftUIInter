@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RotationGesture: View {
+struct RotationGestureView: View {
     
     @State var angle: Angle = Angle(degrees: 0)
     
@@ -36,5 +36,5 @@ struct RotationGesture: View {
 }
 
 #Preview {
-    RotationGesture()
+    RotationGestureView()
 }

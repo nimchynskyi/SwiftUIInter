@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LongPressGesture: View {
+struct LongPressGestureView: View {
     
     @State var isComplete: Bool = false
     @State var isSuccess: Bool = false
@@ -83,5 +83,5 @@ struct LongPressGesture: View {
 }
 
 #Preview {
-    LongPressGesture()
+    LongPressGestureView()
 }

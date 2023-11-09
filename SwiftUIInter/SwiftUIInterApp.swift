@@ -13,9 +13,11 @@ struct SwiftUIInterApp: App {
         WindowGroup {
             NavigationStack {
                 List {
-                    NavigationLink(destination: LongPressGesture())         { Text("Long Tap") }
-                    NavigationLink(destination: MagnificationGesture())     { Text("Magnify Gesture") }
-                    NavigationLink(destination: RotationGesture())          { Text("Rotate Gesture") }
+                    NavigationLink(destination: LongPressGestureView())         { Text("Long Tap") }
+                    NavigationLink(destination: MagnificationGestureView())     { Text("Magnify Gesture") }
+                    NavigationLink(destination: RotationGestureView())          { Text("Rotate Gesture") }
+                    NavigationLink(destination: DragGestureView())              { Text("Drag Gesture (Example 1)") }
+                    NavigationLink(destination: DragGestureView2())             { Text("Drag Gesture (Example 2)") }
                 }
                 .navigationTitle("Gestures")
             }
