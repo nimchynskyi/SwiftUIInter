@@ -16,6 +16,7 @@
 		87D0EFD92AFD54FB00EF1672 /* RotationGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0EFD82AFD54FB00EF1672 /* RotationGesture.swift */; };
 		87D0EFDB2AFD590A00EF1672 /* DragGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0EFDA2AFD590A00EF1672 /* DragGesture.swift */; };
 		87D0EFDD2AFD5DA900EF1672 /* DragGesture2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0EFDC2AFD5DA900EF1672 /* DragGesture2.swift */; };
+		87FB2C2E2AFD961300480B5C /* ScrollViewReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FB2C2D2AFD961300480B5C /* ScrollViewReader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		87D0EFD82AFD54FB00EF1672 /* RotationGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationGesture.swift; sourceTree = "<group>"; };
 		87D0EFDA2AFD590A00EF1672 /* DragGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGesture.swift; sourceTree = "<group>"; };
 		87D0EFDC2AFD5DA900EF1672 /* DragGesture2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGesture2.swift; sourceTree = "<group>"; };
+		87FB2C2D2AFD961300480B5C /* ScrollViewReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewReader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				87D0EFD82AFD54FB00EF1672 /* RotationGesture.swift */,
 				87D0EFDA2AFD590A00EF1672 /* DragGesture.swift */,
 				87D0EFDC2AFD5DA900EF1672 /* DragGesture2.swift */,
+				87FB2C2D2AFD961300480B5C /* ScrollViewReader.swift */,
 				87D0EFCA2AFD3C7200EF1672 /* Assets.xcassets */,
 				87D0EFCC2AFD3C7200EF1672 /* Preview Content */,
 			);
@@ -158,6 +161,7 @@
 				87D0EFD92AFD54FB00EF1672 /* RotationGesture.swift in Sources */,
 				87D0EFC72AFD3C6F00EF1672 /* SwiftUIInterApp.swift in Sources */,
 				87D0EFD52AFD3CB300EF1672 /* LongPressGesture.swift in Sources */,
+				87FB2C2E2AFD961300480B5C /* ScrollViewReader.swift in Sources */,
 				87D0EFDB2AFD590A00EF1672 /* DragGesture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
