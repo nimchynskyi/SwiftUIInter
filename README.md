@@ -1,6 +1,6 @@
 # Personal SwiftUI Code Templates & Boilerplate code
 
-## Gestures: 
+## Gestures 
 - ### 1 - Long Tap 
   - ```.onLongPressGesture {} perform: {}```
   - ```minimumDuration``` & ```maximumDistance``` modifiers
@@ -22,3 +22,10 @@
   - Edit scale & rotate on swipe (Tinder card example)
   - Swipe up/down to show/hide (Sign Up example)
   - Gestures with ```spring()``` animation
+
+## Readers
+- ### 5 - ScrollViewReader
+  - Perform actions inside ```ScrollView```
+  - Auto-scroll to any member: ```.onChange(of: scrollToIndex)```
+  - Set custom value and anchor: ```proxy.scrollTo(value, anchor: .top)```
+  - Scroll with animation
