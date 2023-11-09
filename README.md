@@ -25,6 +25,7 @@
 
 ## Readers
 - ### 5 - ScrollViewReader
-  - Perform actions inside ```ScrollView```, such as auto-scroll to any member
-  - Set custom value and anchor ```.top```, ```.bottom```, ```.center```
-  - Scroll with animations
+  - Perform actions inside ```ScrollView```
+  - Auto-scroll to any member: ```.onChange(of: scrollToIndex)```
+  - Set custom value and anchor: ```proxy.scrollTo(value, anchor: .top)```
+  - Scroll with animation
