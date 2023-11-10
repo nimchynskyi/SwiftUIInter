@@ -71,4 +71,7 @@
   - Use of `enum: String` to choose the sound
   - Error handling
 - ### 12 - Haptics & Vibrations
-  - ...
+  - Use native iOS haptics with `UINotificationFeedbackGenerator` & `UIImpactFeedbackGenerator`
+  - Use of **Singleton** class with instance of `HapticManager()`
+  - Two functions to choose between `notification` and `impact` haptics
+  - Try to use native haptics as they are familiar to users
