@@ -24,8 +24,17 @@ struct SwiftUIInterApp: App {
                     Section(header: Text("Readers")) {
                         NavigationLink(destination: ScrollViewReaderView())         { Text("ScrollViewReader") }
                         NavigationLink(destination: GeometryReaderView())           { Text("GeometryReader (Example 1)") }
-                        NavigationLink(destination: GeometryReaderView2())           { Text("GeometryReader (Example 2)") }
+                        NavigationLink(destination: GeometryReaderView2())          { Text("GeometryReader (Example 2)") }
                     }
+                    
+                    Section(header: Text("Multiple Sheets Problem")) {
+                        NavigationLink(destination: MultipleSheetsView1())          { Text("Solution 1 - $selectedModel binding") }
+                        NavigationLink(destination: MultipleSheetsView2())          { Text("Solution 2 - multiple sheets usage") }
+                        NavigationLink(destination: MultipleSheetsView3())          { Text("Solution 3 - $item binding 🏆") }
+                    }
+                    
+                    
+                    
                 }
                 .navigationTitle("SwiftUI Code DB")
             }
