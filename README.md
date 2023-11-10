@@ -62,3 +62,13 @@
   - Used with `GeometryReader` to track `.overlay` dimensions
   - 🚨 Important to use `.allowsHitTesting(false)` to forbid `GeometryReader` register taps
   - Five-star rating example with animation on change
+
+## Sounds & Haptics
+- ### 11 - Sound Effects
+  - Add custom sound effects
+  - Apple's AVKit - AudiVideoKit
+  - Use of **Singleton** class with instance of `SoundManager()`
+  - Use of `enum: String` to choose the sound
+  - Error handling
+- ### 12 - Haptics & Vibrations
+  - ...
