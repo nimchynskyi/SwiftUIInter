@@ -13,6 +13,7 @@
 		87676D4E2AFE83BE00E73AB6 /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87676D4D2AFE83BE00E73AB6 /* Sounds.swift */; };
 		87676D512AFE861300E73AB6 /* tada.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87676D502AFE861300E73AB6 /* tada.mp3 */; };
 		87676D532AFE861B00E73AB6 /* badum.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87676D522AFE861B00E73AB6 /* badum.mp3 */; };
+		87676D552AFE897800E73AB6 /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87676D542AFE897800E73AB6 /* Haptics.swift */; };
 		87D0EFC72AFD3C6F00EF1672 /* SwiftUIInterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0EFC62AFD3C6F00EF1672 /* SwiftUIInterApp.swift */; };
 		87D0EFCB2AFD3C7200EF1672 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87D0EFCA2AFD3C7200EF1672 /* Assets.xcassets */; };
 		87D0EFCE2AFD3C7200EF1672 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87D0EFCD2AFD3C7200EF1672 /* Preview Assets.xcassets */; };
@@ -34,6 +35,7 @@
 		87676D4D2AFE83BE00E73AB6 /* Sounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sounds.swift; sourceTree = "<group>"; };
 		87676D502AFE861300E73AB6 /* tada.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tada.mp3; sourceTree = "<group>"; };
 		87676D522AFE861B00E73AB6 /* badum.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = badum.mp3; sourceTree = "<group>"; };
+		87676D542AFE897800E73AB6 /* Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptics.swift; sourceTree = "<group>"; };
 		87D0EFC32AFD3C6F00EF1672 /* SwiftUIInter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIInter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D0EFC62AFD3C6F00EF1672 /* SwiftUIInterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIInterApp.swift; sourceTree = "<group>"; };
 		87D0EFCA2AFD3C7200EF1672 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,8 +83,9 @@
 		87676D4C2AFE839A00E73AB6 /* 5SoundsHaptics */ = {
 			isa = PBXGroup;
 			children = (
-				87676D4F2AFE860600E73AB6 /* Sounds */,
 				87676D4D2AFE83BE00E73AB6 /* Sounds.swift */,
+				87676D542AFE897800E73AB6 /* Haptics.swift */,
+				87676D4F2AFE860600E73AB6 /* Sounds */,
 			);
 			path = 5SoundsHaptics;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				87FB2C322AFD9DB000480B5C /* GeometryReader.swift in Sources */,
 				87DA48DF2AFE651F009C5A66 /* GeometryReader2.swift in Sources */,
 				87676D4E2AFE83BE00E73AB6 /* Sounds.swift in Sources */,
+				87676D552AFE897800E73AB6 /* Haptics.swift in Sources */,
 				87D0EFDB2AFD590A00EF1672 /* DragGesture.swift in Sources */,
 				87676D4A2AFE789800E73AB6 /* Mask.swift in Sources */,
 			);
