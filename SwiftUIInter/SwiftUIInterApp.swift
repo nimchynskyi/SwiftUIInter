@@ -42,6 +42,10 @@ struct SwiftUIInterApp: App {
                         NavigationLink(destination: Haptics())                      { Text("Native Haptics") }
                         NavigationLink(destination: LocalNotifications())           { Text("Local Notifications") }
                     }
+                    
+                    Section(header: Text("Utilities")) {
+                        NavigationLink(destination: HashableView())                 { Text("Hashable") }
+                    }
                 }
                 .navigationTitle("SwiftUI Code DB")
             }

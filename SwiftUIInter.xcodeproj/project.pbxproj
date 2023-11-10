@@ -15,6 +15,7 @@
 		87676D532AFE861B00E73AB6 /* badum.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 87676D522AFE861B00E73AB6 /* badum.mp3 */; };
 		87676D552AFE897800E73AB6 /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87676D542AFE897800E73AB6 /* Haptics.swift */; };
 		87676D572AFE8CE100E73AB6 /* LocalNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87676D562AFE8CE100E73AB6 /* LocalNotifications.swift */; };
+		87676D592AFEF03600E73AB6 /* Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87676D582AFEF03600E73AB6 /* Hashable.swift */; };
 		87D0EFC72AFD3C6F00EF1672 /* SwiftUIInterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0EFC62AFD3C6F00EF1672 /* SwiftUIInterApp.swift */; };
 		87D0EFCB2AFD3C7200EF1672 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87D0EFCA2AFD3C7200EF1672 /* Assets.xcassets */; };
 		87D0EFCE2AFD3C7200EF1672 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87D0EFCD2AFD3C7200EF1672 /* Preview Assets.xcassets */; };
@@ -38,6 +39,7 @@
 		87676D522AFE861B00E73AB6 /* badum.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = badum.mp3; sourceTree = "<group>"; };
 		87676D542AFE897800E73AB6 /* Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptics.swift; sourceTree = "<group>"; };
 		87676D562AFE8CE100E73AB6 /* LocalNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotifications.swift; sourceTree = "<group>"; };
+		87676D582AFEF03600E73AB6 /* Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hashable.swift; sourceTree = "<group>"; };
 		87D0EFC32AFD3C6F00EF1672 /* SwiftUIInter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIInter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D0EFC62AFD3C6F00EF1672 /* SwiftUIInterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIInterApp.swift; sourceTree = "<group>"; };
 		87D0EFCA2AFD3C7200EF1672 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,6 +104,14 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
+		87676D5A2AFEF55100E73AB6 /* 6Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				87676D582AFEF03600E73AB6 /* Hashable.swift */,
+			);
+			path = 6Utilities;
+			sourceTree = "<group>";
+		};
 		87D0EFBA2AFD3C6F00EF1672 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +137,7 @@
 				87676D482AFE6C5500E73AB6 /* 3MultipleSheets */,
 				87676D4B2AFE7BDE00E73AB6 /* 4Mask */,
 				87676D4C2AFE839A00E73AB6 /* 5SoundsHaptics */,
+				87676D5A2AFEF55100E73AB6 /* 6Utilities */,
 				87D0EFCA2AFD3C7200EF1672 /* Assets.xcassets */,
 				87D0EFCC2AFD3C7200EF1672 /* Preview Content */,
 			);
@@ -236,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87D0EFD72AFD462B00EF1672 /* MagnificationGesture.swift in Sources */,
+				87676D592AFEF03600E73AB6 /* Hashable.swift in Sources */,
 				87D0EFDD2AFD5DA900EF1672 /* DragGesture2.swift in Sources */,
 				87D0EFD92AFD54FB00EF1672 /* RotationGesture.swift in Sources */,
 				87676D452AFE6C3400E73AB6 /* MultipleSheets2.swift in Sources */,

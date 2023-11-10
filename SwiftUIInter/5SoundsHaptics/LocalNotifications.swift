@@ -62,7 +62,6 @@ class NotificationManager {
         let triggerLocation = UNLocationNotificationTrigger(region: region, repeats: true)
         
         
-        
         let request = UNNotificationRequest(
             identifier: UUID().uuidString, 
             content: content,
