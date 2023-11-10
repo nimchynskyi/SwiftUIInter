@@ -55,3 +55,10 @@
   > 🏆 Best method
   - Use of single `.sheet(item: $selectedModel) { model in }` with `item:` parameter and pass `$selectedModel` binding 
   - Clean code
+ 
+## Other
+- ### 10 - Mask 
+  - `.mask` adapts it's child view to master view
+  - Used with `GeometryReader` to track `.overlay` dimensions
+  - 🚨 Important to use `.allowsHitTesting(false)` to forbid `GeometryReader` register taps
+  - Five-star rating example with animation on change
