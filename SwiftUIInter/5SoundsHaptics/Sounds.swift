@@ -11,7 +11,7 @@ import AVKit
 class SoundManager {
     
     // Singleton Class
-    // Use single instance in any class 
+    // Use single instance in any class
     static let instance = SoundManager()
     
     var player: AVAudioPlayer?
@@ -32,7 +32,6 @@ class SoundManager {
             print("Error playing sound! \(error.localizedDescription)")
         }
     }
-    
 }
 
 struct Sounds: View {
