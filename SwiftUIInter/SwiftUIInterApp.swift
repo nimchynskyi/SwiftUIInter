@@ -13,15 +13,21 @@ struct SwiftUIInterApp: App {
         WindowGroup {
             NavigationStack {
                 List {
-                    NavigationLink(destination: LongPressGestureView())         { Text("Long Tap") }
-                    NavigationLink(destination: MagnificationGestureView())     { Text("Magnify Gesture") }
-                    NavigationLink(destination: RotationGestureView())          { Text("Rotate Gesture") }
-                    NavigationLink(destination: DragGestureView())              { Text("Drag Gesture (Example 1)") }
-                    NavigationLink(destination: DragGestureView2())             { Text("Drag Gesture (Example 2)") }
+                    Section(header: Text("Gestures")) {
+                        NavigationLink(destination: LongPressGestureView())         { Text("Long Tap") }
+                        NavigationLink(destination: MagnificationGestureView())     { Text("Magnify Gesture") }
+                        NavigationLink(destination: RotationGestureView())          { Text("Rotate Gesture") }
+                        NavigationLink(destination: DragGestureView())              { Text("Drag Gesture (Example 1)") }
+                        NavigationLink(destination: DragGestureView2())             { Text("Drag Gesture (Example 2)") }
+                    }
                     
-                    NavigationLink(destination: ScrollViewReaderView())         { Text("ScrollViewReader") }
+                    Section(header: Text("Readers")) {
+                        NavigationLink(destination: ScrollViewReaderView())         { Text("ScrollViewReader") }
+                        NavigationLink(destination: GeometryReaderView())           { Text("GeometryReader (Example 1)") }
+                        NavigationLink(destination: GeometryReaderView2())           { Text("GeometryReader (Example 2)") }
+                    }
                 }
-                .navigationTitle("Gestures")
+                .navigationTitle("SwiftUI Code DB")
             }
         }
     }

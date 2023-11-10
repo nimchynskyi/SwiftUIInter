@@ -31,20 +31,6 @@ struct GeometryReaderView: View {
                 }
             }
         }
-        
-        
-        //        GeometryReader { geometry in
-        //            HStack(spacing: 0) {
-        //                Rectangle()
-        //                    .fill(.red)
-        //                    .frame(width: geometry.size.width * 0.6666)
-        //
-        //                Rectangle()
-        //                    .fill(.blue)
-        //            }
-        //            .ignoresSafeArea()
-        //        }
-        
     }
 }
 
