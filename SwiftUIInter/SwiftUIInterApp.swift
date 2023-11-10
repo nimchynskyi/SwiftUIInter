@@ -33,7 +33,9 @@ struct SwiftUIInterApp: App {
                         NavigationLink(destination: MultipleSheetsView3())          { Text("Solution 3 - $item binding 🏆") }
                     }
                     
-                    
+                    Section(header: Text("Mask")) {
+                        NavigationLink(destination: MaskView())                     { Text("Use of .mask") }
+                    }
                     
                 }
                 .navigationTitle("SwiftUI Code DB")
