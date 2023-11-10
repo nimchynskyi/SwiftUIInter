@@ -85,3 +85,10 @@
     - Location `UNLocationNotificationTrigger`
   - Trigger with `UNUserNotificationCenter.current().add(request)`
   - Cancel pending/delivered notifications `removeAllPendingNotificationRequests`, `removeAllDeliveredNotifications()`
+
+## Utilities
+- ### 14 - Hashable
+  - Unique hash values for custom models/types
+  - Alternative to `Identifiable` as sometimes UUID is not needed
+  - Can generate hash value based on model/type variables
+  - Usually used in `ForEach` loops
