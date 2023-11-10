@@ -34,7 +34,24 @@
   - Set custom value and anchor: ```proxy.scrollTo(value, anchor: .top)```
   - Scroll with animation
 - ### 6 - GeometryReader
-  > **🚨NOTE: Try not to use too often - excessive usage leads to peformance degradation!**
+  > **🚨 NOTE: Try not to use too often - excessive usage leads to peformance degradation!**
   - Track screen/object dimensions/size(width & height) dynamically
   - `GeometryReader { geometry in }`
   - If you can avoid `GeomertyReader` - ***don't*** use it
+
+ ## Multiple Sheets Problem
+> **Often wrong sheet being presented when selecting which sheet to present for the first time.**
+> **This behaviour caused by sheet being rendered before selecting which model to present.**
+> 
+- ### 7 - `$selectedModel` binding
+  > Not advised as it might ruin complex logic views (e.g. some views can require `selectedModel` to be static)
+  - Use binding on model `@Binding var selectedModel: RandomModel` to track changes
+  - Bind it to present on `NextScreen(selectedModel: $selectedModel)`
+- ### 8 - Use of Multiple Sheets **(worst)**
+  > 🐌 Worst overall, okay to use for couple sheets
+  - Use of multiple `.sheet(isPresented: $showSheet, content: {})` for each button
+  - Clutters code
+- ### 9 - `$item` binding **(best)**
+  > 🏆 Best method
+  - Use of single `.sheet(item: $selectedModel) { model in }` with `item:` parameter and pass `$selectedModel` binding 
+  - Clean code
