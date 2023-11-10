@@ -40,6 +40,7 @@ struct SwiftUIInterApp: App {
                     Section(header: Text("Sounds & Haptics")) {
                         NavigationLink(destination: Sounds())                       { Text("Custom sounds") }
                         NavigationLink(destination: Haptics())                      { Text("Native Haptics") }
+                        NavigationLink(destination: LocalNotifications())           { Text("Local Notifications") }
                     }
                 }
                 .navigationTitle("SwiftUI Code DB")
