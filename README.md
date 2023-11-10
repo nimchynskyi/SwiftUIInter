@@ -66,7 +66,7 @@
 ## Sounds & Haptics
 - ### 11 - Sound Effects
   - Add custom sound effects
-  - Apple's AVKit - AudiVideoKit
+  - Apple's `AVKit` Library
   - Use of **Singleton** class with instance of `SoundManager()`
   - Use of `enum: String` to choose the sound
   - Error handling
@@ -75,3 +75,13 @@
   - Use of **Singleton** class with instance of `HapticManager()`
   - Two functions to choose between `notification` and `impact` haptics
   - Try to use native haptics as they are familiar to users
+- ### 13 - Local Notifications
+  - Apple's `UserNotifications` Library
+  - Request permission first with `UNUserNotificationCenter.current().requestAuthorization(options: options)`
+  - Customizable options with `UNAuthorizationOptions` such as `.alert, .sound, .badge` etc.
+  - 3 types of notification trigger:
+    - Time `UNTimeIntervalNotificationTrigger`
+    - Calendar `UNCalendarNotificationTrigger`
+    - Location `UNLocationNotificationTrigger`
+  - Trigger with `UNUserNotificationCenter.current().add(request)`
+  - Cancel pending/delivered notifications `removeAllPendingNotificationRequests`, `removeAllDeliveredNotifications()`
