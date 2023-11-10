@@ -37,6 +37,10 @@ struct SwiftUIInterApp: App {
                         NavigationLink(destination: MaskView())                     { Text("Use of .mask") }
                     }
                     
+                    Section(header: Text("Sounds & Haptics")) {
+                        NavigationLink(destination: Sounds())                       { Text("Custom sounds") }
+                    }
+                    
                 }
                 .navigationTitle("SwiftUI Code DB")
             }
