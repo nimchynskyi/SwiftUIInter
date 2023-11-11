@@ -41,8 +41,7 @@
 
  ## Multiple Sheets Problem
 > **Often wrong sheet being presented when selecting which sheet to present for the first time.**
-> **This behaviour caused by sheet being rendered before selecting which model to present.**
-> 
+> **This behaviour caused by sheet being rendered before selecting which model to present.** 
 - ### 7 - `$selectedModel` binding
   > Not advised as it might ruin complex logic views (e.g. some views can require `selectedModel` to be static)
   - Use binding on model `@Binding var selectedModel: RandomModel` to track changes
@@ -92,3 +91,29 @@
   - Alternative to `Identifiable` as sometimes UUID is not needed
   - Can generate hash value based on model/type variables
   - Usually used in `ForEach` loops
+- ### 15 - Array Data Manipulation
+> 3 main ways to manipulate data in arrays.
+> Examples wit MVVM architecture.
+  - Sort data with comparator:
+  ```
+    filteredArray = dataArray.sorted(by: { $0.points > $1.points })
+  ```
+  - Filter unnecessary data out:
+  ```
+    filteredArray = dataArray.filter({ $0.isVerified })
+  ```
+  - Map data to transform it from one type to another: 
+  ```
+    mappedArray = dataArray.map({ $0.name })
+  ```
+  - Better mapping with `compactMap` if array has unwanted `nil` values:
+  ```
+    mappedArray = dataArray.compactMap({ $0.name })
+  ```
+  - Ability to stack filter actions on array:
+  ```
+     mappedArray = dataArray
+            .sorted(by: { $0.points > $1.points })
+            .filter({ $0.isVerified })
+            .compactMap({ $0.name })
+  ```
