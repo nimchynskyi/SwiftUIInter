@@ -29,12 +29,13 @@ class ArrayModificationViewModel: ObservableObject {
         
         // sort
         /*
-         //        filteredArray = dataArray.sorted { user1, user2 in
-         //            return user1.points > user2.points
-         //        }
-         // same thing
-         //        filteredArray = dataArray.sorted(by: { $0.points > $1.points })
+        filteredArray = dataArray.sorted { user1, user2 in
+            return user1.points > user2.points
+        }
+        same thing
+        filteredArray = dataArray.sorted(by: { $0.points > $1.points })
          */
+        
         
         
         //filter
@@ -46,6 +47,8 @@ class ArrayModificationViewModel: ObservableObject {
          filteredArray = dataArray.filter({ $0.isVerified })
          */
         
+        
+        
         // map
         /*
          mappedArray = dataArray.map({ user in
@@ -54,6 +57,8 @@ class ArrayModificationViewModel: ObservableObject {
          
          mappedArray = dataArray.map({ $0.name })
          */
+        
+        
         
         // better mapping if array has nil values
         /*
