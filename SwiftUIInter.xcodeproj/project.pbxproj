@@ -16,6 +16,7 @@
 		87676D552AFE897800E73AB6 /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87676D542AFE897800E73AB6 /* Haptics.swift */; };
 		87676D572AFE8CE100E73AB6 /* LocalNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87676D562AFE8CE100E73AB6 /* LocalNotifications.swift */; };
 		87676D592AFEF03600E73AB6 /* Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87676D582AFEF03600E73AB6 /* Hashable.swift */; };
+		87676D5C2AFEF66500E73AB6 /* Arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87676D5B2AFEF66500E73AB6 /* Arrays.swift */; };
 		87D0EFC72AFD3C6F00EF1672 /* SwiftUIInterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0EFC62AFD3C6F00EF1672 /* SwiftUIInterApp.swift */; };
 		87D0EFCB2AFD3C7200EF1672 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87D0EFCA2AFD3C7200EF1672 /* Assets.xcassets */; };
 		87D0EFCE2AFD3C7200EF1672 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87D0EFCD2AFD3C7200EF1672 /* Preview Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		87676D542AFE897800E73AB6 /* Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptics.swift; sourceTree = "<group>"; };
 		87676D562AFE8CE100E73AB6 /* LocalNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotifications.swift; sourceTree = "<group>"; };
 		87676D582AFEF03600E73AB6 /* Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hashable.swift; sourceTree = "<group>"; };
+		87676D5B2AFEF66500E73AB6 /* Arrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arrays.swift; sourceTree = "<group>"; };
 		87D0EFC32AFD3C6F00EF1672 /* SwiftUIInter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIInter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D0EFC62AFD3C6F00EF1672 /* SwiftUIInterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIInterApp.swift; sourceTree = "<group>"; };
 		87D0EFCA2AFD3C7200EF1672 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				87676D582AFEF03600E73AB6 /* Hashable.swift */,
+				87676D5B2AFEF66500E73AB6 /* Arrays.swift */,
 			);
 			path = 6Utilities;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				87FB2C2E2AFD961300480B5C /* ScrollViewReader.swift in Sources */,
 				87FB2C322AFD9DB000480B5C /* GeometryReader.swift in Sources */,
 				87DA48DF2AFE651F009C5A66 /* GeometryReader2.swift in Sources */,
+				87676D5C2AFEF66500E73AB6 /* Arrays.swift in Sources */,
 				87676D4E2AFE83BE00E73AB6 /* Sounds.swift in Sources */,
 				87676D552AFE897800E73AB6 /* Haptics.swift in Sources */,
 				87D0EFDB2AFD590A00EF1672 /* DragGesture.swift in Sources */,
