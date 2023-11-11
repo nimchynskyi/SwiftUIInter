@@ -45,6 +45,7 @@ struct SwiftUIInterApp: App {
                     
                     Section(header: Text("Utilities")) {
                         NavigationLink(destination: HashableView())                 { Text("Hashable") }
+                        NavigationLink(destination: Arrays())                       { Text("Arrays Data Manipulation")}
                     }
                 }
                 .navigationTitle("SwiftUI Code DB")
