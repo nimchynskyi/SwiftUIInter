@@ -95,25 +95,28 @@
 > 3 main ways to manipulate data in arrays.
 > Examples wit MVVM architecture.
   - Sort data with comparator:
-  ```
+  ```swift
     filteredArray = dataArray.sorted(by: { $0.points > $1.points })
   ```
   - Filter unnecessary data out:
-  ```
+  ```swift
     filteredArray = dataArray.filter({ $0.isVerified })
   ```
   - Map data to transform it from one type to another: 
-  ```
+  ```swift
     mappedArray = dataArray.map({ $0.name })
   ```
   - Better mapping with `compactMap` if array has unwanted `nil` values:
-  ```
+  ```swift
     mappedArray = dataArray.compactMap({ $0.name })
   ```
   - Ability to stack filter actions on array:
-  ```
-     mappedArray = dataArray
+  ```swift
+    mappedArray = dataArray
             .sorted(by: { $0.points > $1.points })
             .filter({ $0.isVerified })
             .compactMap({ $0.name })
   ```
+
+## Core Data
+- ### 
