@@ -119,5 +119,6 @@
   ```
 
 ## Core Data
+> Local Database on the iOS that persists between sessions.
 - ### Core Data with `@FetchRequest`
   [Link](https://github.com/fsociety010101/SwiftUIInterCoreData) to separate project repository.
