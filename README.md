@@ -119,4 +119,5 @@
   ```
 
 ## Core Data
-- ### 
+- ### Core Data with `@FetchRequest`
+  [Link](https://github.com/fsociety010101/SwiftUIInterCoreData) to separate project repository.
