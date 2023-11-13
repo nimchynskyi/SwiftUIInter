@@ -27,6 +27,8 @@
 		87D0EFDD2AFD5DA900EF1672 /* DragGesture2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0EFDC2AFD5DA900EF1672 /* DragGesture2.swift */; };
 		87DA48DF2AFE651F009C5A66 /* GeometryReader2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DA48DE2AFE651F009C5A66 /* GeometryReader2.swift */; };
 		87DA48E12AFE690A009C5A66 /* MultipleSheets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DA48E02AFE690A009C5A66 /* MultipleSheets.swift */; };
+		87FB08002B02E54200D757B2 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FB07FF2B02E54200D757B2 /* CoreData.swift */; };
+		87FB08032B02E69500D757B2 /* FruitsContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 87FB08012B02E69500D757B2 /* FruitsContainer.xcdatamodeld */; };
 		87FB2C2E2AFD961300480B5C /* ScrollViewReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FB2C2D2AFD961300480B5C /* ScrollViewReader.swift */; };
 		87FB2C322AFD9DB000480B5C /* GeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FB2C312AFD9DB000480B5C /* GeometryReader.swift */; };
 /* End PBXBuildFile section */
@@ -53,6 +55,8 @@
 		87D0EFDC2AFD5DA900EF1672 /* DragGesture2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGesture2.swift; sourceTree = "<group>"; };
 		87DA48DE2AFE651F009C5A66 /* GeometryReader2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReader2.swift; sourceTree = "<group>"; };
 		87DA48E02AFE690A009C5A66 /* MultipleSheets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSheets.swift; sourceTree = "<group>"; };
+		87FB07FF2B02E54200D757B2 /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
+		87FB08022B02E69500D757B2 /* FruitsContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FruitsContainer.xcdatamodel; sourceTree = "<group>"; };
 		87FB2C2D2AFD961300480B5C /* ScrollViewReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewReader.swift; sourceTree = "<group>"; };
 		87FB2C312AFD9DB000480B5C /* GeometryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -141,6 +145,7 @@
 				87676D4B2AFE7BDE00E73AB6 /* 4Mask */,
 				87676D4C2AFE839A00E73AB6 /* 5SoundsHaptics */,
 				87676D5A2AFEF55100E73AB6 /* 6Utilities */,
+				87FB07FE2B02E27500D757B2 /* 7CoreData */,
 				87D0EFCA2AFD3C7200EF1672 /* Assets.xcassets */,
 				87D0EFCC2AFD3C7200EF1672 /* Preview Content */,
 			);
@@ -153,6 +158,15 @@
 				87D0EFCD2AFD3C7200EF1672 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		87FB07FE2B02E27500D757B2 /* 7CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				87FB07FF2B02E54200D757B2 /* CoreData.swift */,
+				87FB08012B02E69500D757B2 /* FruitsContainer.xcdatamodeld */,
+			);
+			path = 7CoreData;
 			sourceTree = "<group>";
 		};
 		87FB2C2F2AFD9D4000480B5C /* 1Gestures */ = {
@@ -257,9 +271,11 @@
 				87DA48E12AFE690A009C5A66 /* MultipleSheets.swift in Sources */,
 				87D0EFC72AFD3C6F00EF1672 /* SwiftUIInterApp.swift in Sources */,
 				87D0EFD52AFD3CB300EF1672 /* LongPressGesture.swift in Sources */,
+				87FB08002B02E54200D757B2 /* CoreData.swift in Sources */,
 				87676D472AFE6C4500E73AB6 /* MultipleSheets3.swift in Sources */,
 				87676D572AFE8CE100E73AB6 /* LocalNotifications.swift in Sources */,
 				87FB2C2E2AFD961300480B5C /* ScrollViewReader.swift in Sources */,
+				87FB08032B02E69500D757B2 /* FruitsContainer.xcdatamodeld in Sources */,
 				87FB2C322AFD9DB000480B5C /* GeometryReader.swift in Sources */,
 				87DA48DF2AFE651F009C5A66 /* GeometryReader2.swift in Sources */,
 				87676D5C2AFEF66500E73AB6 /* Arrays.swift in Sources */,
@@ -472,6 +488,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		87FB08012B02E69500D757B2 /* FruitsContainer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				87FB08022B02E69500D757B2 /* FruitsContainer.xcdatamodel */,
+			);
+			currentVersion = 87FB08022B02E69500D757B2 /* FruitsContainer.xcdatamodel */;
+			path = FruitsContainer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 87D0EFBB2AFD3C6F00EF1672 /* Project object */;
 }
