@@ -122,3 +122,11 @@
 > Local Database on the iOS that persists between sessions.
 - ### Core Data with `@FetchRequest`
   [Link](https://github.com/fsociety010101/SwiftUIInterCoreData) to separate project repository.
+- ### Core Data with MVVM architecture
+  - `NSPersistentContainer` to store cusom entities
+  - Custom initializer with error handling
+  - Fetch function, alternative to `@FetchRequest`, to fetch all data
+  - Add, update and delete items
+  - Save item action (Core Data DB transaction after each change)
+  - ViewModel inside the View to ensure data managmenet
+  - Fully functional user interface written in SwiftUI
