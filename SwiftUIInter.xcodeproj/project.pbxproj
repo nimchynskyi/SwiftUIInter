@@ -17,6 +17,8 @@
 		87676D572AFE8CE100E73AB6 /* LocalNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87676D562AFE8CE100E73AB6 /* LocalNotifications.swift */; };
 		87676D592AFEF03600E73AB6 /* Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87676D582AFEF03600E73AB6 /* Hashable.swift */; };
 		87676D5C2AFEF66500E73AB6 /* Arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87676D5B2AFEF66500E73AB6 /* Arrays.swift */; };
+		878C08852B057A5E00C5A018 /* CoreDataRelationships.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878C08842B057A5E00C5A018 /* CoreDataRelationships.swift */; };
+		878C08882B057B9000C5A018 /* CoreDataContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 878C08862B057B9000C5A018 /* CoreDataContainer.xcdatamodeld */; };
 		87D0EFC72AFD3C6F00EF1672 /* SwiftUIInterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0EFC62AFD3C6F00EF1672 /* SwiftUIInterApp.swift */; };
 		87D0EFCB2AFD3C7200EF1672 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87D0EFCA2AFD3C7200EF1672 /* Assets.xcassets */; };
 		87D0EFCE2AFD3C7200EF1672 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87D0EFCD2AFD3C7200EF1672 /* Preview Assets.xcassets */; };
@@ -44,6 +46,8 @@
 		87676D562AFE8CE100E73AB6 /* LocalNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotifications.swift; sourceTree = "<group>"; };
 		87676D582AFEF03600E73AB6 /* Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hashable.swift; sourceTree = "<group>"; };
 		87676D5B2AFEF66500E73AB6 /* Arrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arrays.swift; sourceTree = "<group>"; };
+		878C08842B057A5E00C5A018 /* CoreDataRelationships.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataRelationships.swift; sourceTree = "<group>"; };
+		878C08872B057B9000C5A018 /* CoreDataContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataContainer.xcdatamodel; sourceTree = "<group>"; };
 		87D0EFC32AFD3C6F00EF1672 /* SwiftUIInter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIInter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D0EFC62AFD3C6F00EF1672 /* SwiftUIInterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIInterApp.swift; sourceTree = "<group>"; };
 		87D0EFCA2AFD3C7200EF1672 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -164,6 +168,8 @@
 			isa = PBXGroup;
 			children = (
 				87FB07FF2B02E54200D757B2 /* CoreData.swift */,
+				878C08842B057A5E00C5A018 /* CoreDataRelationships.swift */,
+				878C08862B057B9000C5A018 /* CoreDataContainer.xcdatamodeld */,
 				87FB08012B02E69500D757B2 /* FruitsContainer.xcdatamodeld */,
 			);
 			path = 7CoreData;
@@ -270,6 +276,8 @@
 				87676D452AFE6C3400E73AB6 /* MultipleSheets2.swift in Sources */,
 				87DA48E12AFE690A009C5A66 /* MultipleSheets.swift in Sources */,
 				87D0EFC72AFD3C6F00EF1672 /* SwiftUIInterApp.swift in Sources */,
+				878C08852B057A5E00C5A018 /* CoreDataRelationships.swift in Sources */,
+				878C08882B057B9000C5A018 /* CoreDataContainer.xcdatamodeld in Sources */,
 				87D0EFD52AFD3CB300EF1672 /* LongPressGesture.swift in Sources */,
 				87FB08002B02E54200D757B2 /* CoreData.swift in Sources */,
 				87676D472AFE6C4500E73AB6 /* MultipleSheets3.swift in Sources */,
@@ -490,6 +498,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		878C08862B057B9000C5A018 /* CoreDataContainer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				878C08872B057B9000C5A018 /* CoreDataContainer.xcdatamodel */,
+			);
+			currentVersion = 878C08872B057B9000C5A018 /* CoreDataContainer.xcdatamodel */;
+			path = CoreDataContainer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		87FB08012B02E69500D757B2 /* FruitsContainer.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (

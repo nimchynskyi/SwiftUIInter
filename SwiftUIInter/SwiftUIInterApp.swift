@@ -50,6 +50,7 @@ struct SwiftUIInterApp: App {
                     
                     Section(header: Text("Core Data")) {
                         NavigationLink(destination: CoreDataView())                 { Text("Core Data MVVM") }
+                        NavigationLink(destination: CoreDataRelationships())        { Text("Core Data Relationships") }
                     }
                 }
                 .navigationTitle("SwiftUI Code DB")
