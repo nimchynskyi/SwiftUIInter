@@ -130,3 +130,17 @@
   - Save item action (Core Data DB transaction after each change)
   - ViewModel inside the View to ensure data managmenet
   - Fully functional user interface written in SwiftUI
+- ### Core Data Relationships, predicates and delete rules
+  - Singleton instance with `NSPersistentContainer`, `NSManagedObjectContext`, custom initializer
+  - ViewModel containing Singleton instance to manage container with custom `add`, `get`, `update` and `delete` functions for each entity.
+  - Three custom entities `Business`, `Department` and `Employee` with own attributes
+    
+    Core Data graph: 
+    <img width="896" alt="image" src="https://github.com/fsociety010101/SwiftUIInter/assets/59197830/c60def3f-ee8d-4d04-b86e-69070b61076c">
+    
+  - Set Delete Rules, such as:
+    - `No Action`
+    - `Nullify` - sets all its mentions to null
+    - `Cascade` - also deletes all its members e.g. employee gets deleted from deleted department
+    - `Deny` - won't delete until empty and has no members
+
