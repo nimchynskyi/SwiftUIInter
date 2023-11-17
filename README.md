@@ -139,8 +139,8 @@
     <img width="896" alt="image" src="https://github.com/fsociety010101/SwiftUIInter/assets/59197830/c60def3f-ee8d-4d04-b86e-69070b61076c">
     
   - Set Delete Rules, such as:
-    - `No Action`
     - `Nullify` - sets all its mentions to null
     - `Cascade` - also deletes all its members e.g. employee gets deleted from deleted department
     - `Deny` - won't delete until empty and has no members
+    - `No Action`
 
