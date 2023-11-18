@@ -58,6 +58,8 @@ struct SwiftUIInterApp: App {
                     NavigationLink(destination: Typealias())                        { Text("typealias") }
                     
                     NavigationLink(destination: Escaping())                         { Text("@escaping") }
+                    
+                    NavigationLink(destination: CodableView())                      { Text("Codable") }
                 }
                 .navigationTitle("SwiftUI Code DB")
             }
