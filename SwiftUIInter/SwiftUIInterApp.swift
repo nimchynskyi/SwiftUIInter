@@ -33,9 +33,7 @@ struct SwiftUIInterApp: App {
                         NavigationLink(destination: MultipleSheetsView3())          { Text("Solution 3 - $item binding 🏆") }
                     }
                     
-                    Section(header: Text("Mask")) {
-                        NavigationLink(destination: MaskView())                     { Text("Use of .mask") }
-                    }
+                    NavigationLink(destination: MaskView())                         { Text("Use of .mask") }
                     
                     Section(header: Text("Sounds & Haptics")) {
                         NavigationLink(destination: Sounds())                       { Text("Custom sounds") }
@@ -53,13 +51,12 @@ struct SwiftUIInterApp: App {
                         NavigationLink(destination: CoreDataRelationships())        { Text("Core Data Relationships") }
                     }
                     
-                    Section(header: Text("Backgorund Threads")) {
-                        NavigationLink(destination: BackgroundThread())             { Text("Background Threads") }
-                    }
+                    NavigationLink(destination: BackgroundThread())                 { Text("Background Threads") }
                     
-                    Section(header: Text("Weak Self")) {
-                        NavigationLink(destination: WeakSelf())                     { Text("Weak Self") }
-                    }
+                    NavigationLink(destination: WeakSelf())                         { Text("Weak Self") }
+                    
+                    NavigationLink(destination: Typealias())                        { Text("Typealias") }
+                    
                 }
                 .navigationTitle("SwiftUI Code DB")
             }

@@ -31,6 +31,7 @@
 		87DA48E12AFE690A009C5A66 /* MultipleSheets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DA48E02AFE690A009C5A66 /* MultipleSheets.swift */; };
 		87E8AA1C2B08DD2200A5F2D4 /* BackgroundThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E8AA1B2B08DD2200A5F2D4 /* BackgroundThread.swift */; };
 		87E8AA1F2B08F1A900A5F2D4 /* WeakSelf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E8AA1E2B08F1A900A5F2D4 /* WeakSelf.swift */; };
+		87E8AA222B09001A00A5F2D4 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E8AA212B09001A00A5F2D4 /* Typealias.swift */; };
 		87FB08002B02E54200D757B2 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FB07FF2B02E54200D757B2 /* CoreData.swift */; };
 		87FB08032B02E69500D757B2 /* FruitsContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 87FB08012B02E69500D757B2 /* FruitsContainer.xcdatamodeld */; };
 		87FB2C2E2AFD961300480B5C /* ScrollViewReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FB2C2D2AFD961300480B5C /* ScrollViewReader.swift */; };
@@ -63,6 +64,7 @@
 		87DA48E02AFE690A009C5A66 /* MultipleSheets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSheets.swift; sourceTree = "<group>"; };
 		87E8AA1B2B08DD2200A5F2D4 /* BackgroundThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundThread.swift; sourceTree = "<group>"; };
 		87E8AA1E2B08F1A900A5F2D4 /* WeakSelf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakSelf.swift; sourceTree = "<group>"; };
+		87E8AA212B09001A00A5F2D4 /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
 		87FB07FF2B02E54200D757B2 /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
 		87FB08022B02E69500D757B2 /* FruitsContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FruitsContainer.xcdatamodel; sourceTree = "<group>"; };
 		87FB2C2D2AFD961300480B5C /* ScrollViewReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewReader.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				87FB07FE2B02E27500D757B2 /* 7CoreData */,
 				87E8AA1A2B08DD0B00A5F2D4 /* 8BackgroundThread */,
 				87E8AA1D2B08F19B00A5F2D4 /* 9WeakSelf */,
+				87E8AA202B08FFE900A5F2D4 /* 10Typealias */,
 				87D0EFCA2AFD3C7200EF1672 /* Assets.xcassets */,
 				87D0EFCC2AFD3C7200EF1672 /* Preview Content */,
 			);
@@ -184,6 +187,14 @@
 				87E8AA1E2B08F1A900A5F2D4 /* WeakSelf.swift */,
 			);
 			path = 9WeakSelf;
+			sourceTree = "<group>";
+		};
+		87E8AA202B08FFE900A5F2D4 /* 10Typealias */ = {
+			isa = PBXGroup;
+			children = (
+				87E8AA212B09001A00A5F2D4 /* Typealias.swift */,
+			);
+			path = 10Typealias;
 			sourceTree = "<group>";
 		};
 		87FB07FE2B02E27500D757B2 /* 7CoreData */ = {
@@ -305,6 +316,7 @@
 				87676D472AFE6C4500E73AB6 /* MultipleSheets3.swift in Sources */,
 				87676D572AFE8CE100E73AB6 /* LocalNotifications.swift in Sources */,
 				87FB2C2E2AFD961300480B5C /* ScrollViewReader.swift in Sources */,
+				87E8AA222B09001A00A5F2D4 /* Typealias.swift in Sources */,
 				87FB08032B02E69500D757B2 /* FruitsContainer.xcdatamodeld in Sources */,
 				87E8AA1C2B08DD2200A5F2D4 /* BackgroundThread.swift in Sources */,
 				87FB2C322AFD9DB000480B5C /* GeometryReader.swift in Sources */,
