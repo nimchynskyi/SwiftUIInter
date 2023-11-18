@@ -237,7 +237,7 @@ Three ways to use escaping closure:
   ```
   
 ## Codable, Decodable and Encodable
-### *Codable = Decodable + Encodable*
+### 🚨 *Codable = Decodable + Encodable*
 - Decodable - type that can decode itself from an external representation (allows to initialize model from some data)
   ```swift
   self.someModel = try? JSONDecoder().decode(SomeModel.self, from: data)
