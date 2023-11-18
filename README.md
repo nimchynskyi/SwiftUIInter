@@ -144,3 +144,32 @@
     - `Deny` - won't delete until empty and has no members
     - `No Action`
 
+## Background Threads
+> Manage how tasks are running to control how CPU is used.
+- ### Run on main thread
+  - API call is completed on the main thread (Thread 1)
+  - CPU spikes occurring only on the main thread
+    <img width="1052" alt="image" src="https://github.com/fsociety010101/SwiftUIInter/assets/59197830/9b05a9e7-9e75-429f-b13c-b78c635d2d8f">
+
+- ### Run on background thread
+  - API call is completed on the background thread using `DispatchQueue.global().async {}`
+    > **🚨 NOTE: Using without `DispatchQueue.main.async` is causing an error, because EVERYTHING, including UI refresh, is running on the background threads.**
+  - Code that triggers UI refresh must be run in `DispatchQueue.main.async { ... }`
+  - CPU spikes occurring on several background threads
+  - Main thread (Thread 1) is only used to refresh UI
+    <img width="1052" alt="image" src="https://github.com/fsociety010101/SwiftUIInter/assets/59197830/828d4dc4-175f-4aa1-a6ae-89dbae23d66d">
+
+- ### Run on background thread with QoS specified
+  - API call is completed on the background thread using `DispatchQueue.global(qos: DispatchQoS.QoSClass).async`
+  - Several QoS options:
+    - `.default`
+    - `.unspecified`
+    - `.background` - the quality-of-service class for maintenance or cleanup tasks that you create
+    - `.userInitiated` - the quality-of-service class for tasks that prevent the user from actively using your app (can't use app until this loads)
+    - `.userInteractive` - the quality-of-service class for user-interactive tasks, such as animations, event handling, or updating your app's user interface (very common)
+    - `.utility` - the quality-of-service class for tasks that the user does not track actively
+  - Useful code to track threads
+    ```swift
+    Thread.isMainThread  // returns true or false
+    Thread.current       // returns current thread (e.g. number and name)
+    ```
