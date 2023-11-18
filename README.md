@@ -206,32 +206,32 @@
     - User-defined types (e.g: class, struct, enum)
     - Complex types (e.g: closures)
 ## Escaping closure
-  - Three ways to use escaping closure:
-    - Plain
-      ```swift
-      func downloadData(completionHandler: @escaping (_ data: String) -> ()) {
-        ...
-      }
-      ```
-    - Using return result model
-      ```swift
-      func downloadData(completionHandler: @escaping (DownloadResult) -> ()) {
-        ...
-      }
+Three ways to use escaping closure:
+  - Plain
+    ```swift
+    func downloadData(completionHandler: @escaping (_ data: String) -> ()) {
+      ...
+    }
+    ```
+  - Using return result model
+    ```swift
+    func downloadData(completionHandler: @escaping (DownloadResult) -> ()) {
+      ...
+    }
 
-      struct DownloadResult {
-        let data: String
-      }
-      ```
-    - Using typealias
-      ```swift
-      func downloadData(completionHandler: @escaping DownloadCompletion) {
-        ...
-      }
+    struct DownloadResult {
+      let data: String
+    }
+    ```
+  - Using typealias
+    ```swift
+    func downloadData(completionHandler: @escaping DownloadCompletion) {
+      ...
+    }
 
-      struct DownloadResult {
-        let data: String
-      }
+    struct DownloadResult {
+      let data: String
+    }
 
-      typealias DownloadCompletion = (DownloadResult) -> ()
-      ```
+    typealias DownloadCompletion = (DownloadResult) -> ()
+    ```
