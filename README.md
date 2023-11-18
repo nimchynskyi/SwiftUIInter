@@ -235,3 +235,15 @@ Three ways to use escaping closure:
   
   typealias DownloadCompletion = (DownloadResult) -> ()
   ```
+  
+## Codable, Decodable and Encodable
+### *Codable = Decodable + Encodable*
+- Decodable - type that can decode itself from an external representation (allows to initialize model from some data)
+  ```swift
+  self.someModel = try? JSONDecoder().decode(SomeModel.self, from: data)
+  ```
+- Encodable - type that can encode itself to an external representation (allows to initialize data from some model)
+  ```swift
+  let jsonData = try? JSONEncoder().encode(data)
+  ```
+- Decodable and Encodable always need their own initializers, Codable - **DOESN'T**, it automatically handles initializers and containers
