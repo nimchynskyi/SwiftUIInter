@@ -190,4 +190,18 @@
       }
       ```
 
-## 
+## Typealias
+  - Provide a new name for an existing data type
+    ```swift
+    struct MovieModel {
+      let title: String
+      let director: String
+      let count: Int
+    }
+
+    typealias TVModel = MovieModel
+    ```
+  - Create typealias for: 
+    - Built-in types (eg: String, Int)
+    - User-defined types (e.g: class, struct, enum)
+    - Complex types (e.g: closures)
