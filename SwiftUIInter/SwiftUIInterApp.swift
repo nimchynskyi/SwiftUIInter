@@ -52,6 +52,10 @@ struct SwiftUIInterApp: App {
                         NavigationLink(destination: CoreDataView())                 { Text("Core Data MVVM") }
                         NavigationLink(destination: CoreDataRelationships())        { Text("Core Data Relationships") }
                     }
+                    
+                    Section(header: Text("Backgorund Threads")) {
+                        NavigationLink(destination: BackgroundThread())                 { Text("Background Threads") }
+                    }
                 }
                 .navigationTitle("SwiftUI Code DB")
             }
