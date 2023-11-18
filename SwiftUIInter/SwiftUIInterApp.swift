@@ -54,7 +54,11 @@ struct SwiftUIInterApp: App {
                     }
                     
                     Section(header: Text("Backgorund Threads")) {
-                        NavigationLink(destination: BackgroundThread())                 { Text("Background Threads") }
+                        NavigationLink(destination: BackgroundThread())             { Text("Background Threads") }
+                    }
+                    
+                    Section(header: Text("Weak Self")) {
+                        NavigationLink(destination: WeakSelf())                     { Text("Weak Self") }
                     }
                 }
                 .navigationTitle("SwiftUI Code DB")
