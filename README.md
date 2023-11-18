@@ -175,6 +175,7 @@
 
 ## Weak Self
   - Mark tasks that are not important, so they have the abillity to deinitialize
+  - Very important if the app has tons of calls
   - For example:
     - This data will be alive and ready to be shown without being deinitialized for 500 seconds. It gathers over time and number of such tasks can be huge which leads to slowdowns.
       ```swift
