@@ -53,10 +53,11 @@ struct SwiftUIInterApp: App {
                     
                     NavigationLink(destination: BackgroundThread())                 { Text("Background Threads") }
                     
-                    NavigationLink(destination: WeakSelf())                         { Text("Weak Self") }
+                    NavigationLink(destination: WeakSelf())                         { Text("[weak self]") }
                     
-                    NavigationLink(destination: Typealias())                        { Text("Typealias") }
+                    NavigationLink(destination: Typealias())                        { Text("typealias") }
                     
+                    NavigationLink(destination: Escaping())                         { Text("@escaping") }
                 }
                 .navigationTitle("SwiftUI Code DB")
             }
