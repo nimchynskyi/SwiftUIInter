@@ -247,3 +247,13 @@ Three ways to use escaping closure:
   let jsonData = try? JSONEncoder().encode(data)
   ```
 - Decodable and Encodable always need their own initializers, Codable - **DOESN'T**, it automatically handles initializers and containers
+
+## Downloading JSON from API
+- ### Using `URLSession` and escaping closures
+  > **🚨 `dataTask` automatically goes to the background thread**
+  - Generic download function to use on different URLs across the application
+  - Downloading data occurs on the main thread (triggers UI refresh)
+  - `[weak self]` is used to avoid cases with strong references
+  - MVVM architecture with custom models
+  - Used this public **[API](https://jsonplaceholder.typicode.com/posts)**
+- ### temp
