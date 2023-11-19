@@ -38,6 +38,7 @@
 		87FB08032B02E69500D757B2 /* FruitsContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 87FB08012B02E69500D757B2 /* FruitsContainer.xcdatamodeld */; };
 		87FB2C2E2AFD961300480B5C /* ScrollViewReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FB2C2D2AFD961300480B5C /* ScrollViewReader.swift */; };
 		87FB2C322AFD9DB000480B5C /* GeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FB2C312AFD9DB000480B5C /* GeometryReader.swift */; };
+		87FCA9822B0A5FB900B7AF59 /* DownloadEscaping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FCA9812B0A5FB900B7AF59 /* DownloadEscaping.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		87FB08022B02E69500D757B2 /* FruitsContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FruitsContainer.xcdatamodel; sourceTree = "<group>"; };
 		87FB2C2D2AFD961300480B5C /* ScrollViewReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewReader.swift; sourceTree = "<group>"; };
 		87FB2C312AFD9DB000480B5C /* GeometryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReader.swift; sourceTree = "<group>"; };
+		87FCA9812B0A5FB900B7AF59 /* DownloadEscaping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadEscaping.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				87D0EFC62AFD3C6F00EF1672 /* SwiftUIInterApp.swift */,
+				87FCA9812B0A5FB900B7AF59 /* DownloadEscaping.swift */,
 				87FB2C2F2AFD9D4000480B5C /* 1Gestures */,
 				87FB2C302AFD9D5500480B5C /* 2Readers */,
 				87676D482AFE6C5500E73AB6 /* 3MultipleSheets */,
@@ -327,6 +330,7 @@
 				87D0EFD72AFD462B00EF1672 /* MagnificationGesture.swift in Sources */,
 				87676D592AFEF03600E73AB6 /* Hashable.swift in Sources */,
 				87D0EFDD2AFD5DA900EF1672 /* DragGesture2.swift in Sources */,
+				87FCA9822B0A5FB900B7AF59 /* DownloadEscaping.swift in Sources */,
 				87D0EFD92AFD54FB00EF1672 /* RotationGesture.swift in Sources */,
 				87676D452AFE6C3400E73AB6 /* MultipleSheets2.swift in Sources */,
 				87DA48E12AFE690A009C5A66 /* MultipleSheets.swift in Sources */,
