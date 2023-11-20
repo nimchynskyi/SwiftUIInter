@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct PostModel: Identifiable, Codable {
-    let userId: Int
-    let id: Int
-    let title: String
-    let body: String
-}
+//struct PostModel: Identifiable, Codable {
+//    let userId: Int
+//    let id: Int
+//    let title: String
+//    let body: String
+//}
 
 class DownloadEscapingViewModel: ObservableObject {
     
@@ -41,7 +41,7 @@ class DownloadEscapingViewModel: ObservableObject {
     // generic function to use on different urls across the app
     func downloadData(fromURL url: URL, completionHandler: @escaping (_ data: Data?) -> ()) {
         URLSession.shared.dataTask(with: url) { data, response, error in
-            // 🚨 dataTask automatically goes to the background thread
+            // 🚨 
             
             // can combine all guards into one
             guard

@@ -39,6 +39,7 @@
 		87FB2C2E2AFD961300480B5C /* ScrollViewReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FB2C2D2AFD961300480B5C /* ScrollViewReader.swift */; };
 		87FB2C322AFD9DB000480B5C /* GeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FB2C312AFD9DB000480B5C /* GeometryReader.swift */; };
 		87FCA9822B0A5FB900B7AF59 /* DownloadEscaping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FCA9812B0A5FB900B7AF59 /* DownloadEscaping.swift */; };
+		87FCA9852B0A6F1F00B7AF59 /* DownloadCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FCA9842B0A6F1F00B7AF59 /* DownloadCombine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		87FB2C2D2AFD961300480B5C /* ScrollViewReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewReader.swift; sourceTree = "<group>"; };
 		87FB2C312AFD9DB000480B5C /* GeometryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReader.swift; sourceTree = "<group>"; };
 		87FCA9812B0A5FB900B7AF59 /* DownloadEscaping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadEscaping.swift; sourceTree = "<group>"; };
+		87FCA9842B0A6F1F00B7AF59 /* DownloadCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadCombine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,7 +157,6 @@
 			isa = PBXGroup;
 			children = (
 				87D0EFC62AFD3C6F00EF1672 /* SwiftUIInterApp.swift */,
-				87FCA9812B0A5FB900B7AF59 /* DownloadEscaping.swift */,
 				87FB2C2F2AFD9D4000480B5C /* 1Gestures */,
 				87FB2C302AFD9D5500480B5C /* 2Readers */,
 				87676D482AFE6C5500E73AB6 /* 3MultipleSheets */,
@@ -168,6 +169,7 @@
 				87E8AA202B08FFE900A5F2D4 /* 10Typealias */,
 				87E8AA232B09037E00A5F2D4 /* 11Escaping */,
 				87E8AA262B090D8100A5F2D4 /* 12Codable */,
+				87FCA9832B0A6E6B00B7AF59 /* 13DownloadJSON */,
 				87D0EFCA2AFD3C7200EF1672 /* Assets.xcassets */,
 				87D0EFCC2AFD3C7200EF1672 /* Preview Content */,
 			);
@@ -255,6 +257,15 @@
 			path = 2Readers;
 			sourceTree = "<group>";
 		};
+		87FCA9832B0A6E6B00B7AF59 /* 13DownloadJSON */ = {
+			isa = PBXGroup;
+			children = (
+				87FCA9812B0A5FB900B7AF59 /* DownloadEscaping.swift */,
+				87FCA9842B0A6F1F00B7AF59 /* DownloadCombine.swift */,
+			);
+			path = 13DownloadJSON;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -338,6 +349,7 @@
 				878C08852B057A5E00C5A018 /* CoreDataRelationships.swift in Sources */,
 				878C08882B057B9000C5A018 /* CoreDataContainer.xcdatamodeld in Sources */,
 				87E8AA252B09039800A5F2D4 /* Escaping.swift in Sources */,
+				87FCA9852B0A6F1F00B7AF59 /* DownloadCombine.swift in Sources */,
 				87D0EFD52AFD3CB300EF1672 /* LongPressGesture.swift in Sources */,
 				87FB08002B02E54200D757B2 /* CoreData.swift in Sources */,
 				87676D472AFE6C4500E73AB6 /* MultipleSheets3.swift in Sources */,

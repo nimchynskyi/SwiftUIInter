@@ -62,7 +62,8 @@ struct SwiftUIInterApp: App {
                     NavigationLink(destination: CodableView())                      { Text("Codable") }
                     
                     Section(header: Text("JSON Download & APIs")) {
-                        NavigationLink(destination: DownloadEscaping())                 { Text("Download JSON w/ URLSession and @escaping") }
+                        NavigationLink(destination: DownloadEscaping())             { Text("Download JSON w/ URLSession and @escaping") }
+                        NavigationLink(destination: DownloadCombine())              { Text("Download JSON w/ Combine") }
                     }
                 }
                 .navigationTitle("SwiftUI Code DB")
