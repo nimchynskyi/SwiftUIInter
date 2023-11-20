@@ -249,11 +249,54 @@ Three ways to use escaping closure:
 - Decodable and Encodable always need their own initializers, Codable - **DOESN'T**, it automatically handles initializers and containers
 
 ## Downloading JSON from API
-- ### Using `URLSession` and escaping closures
+- ### `URLSession` and escaping closures
   > **🚨 `dataTask` automatically goes to the background thread**
   - Generic download function to use on different URLs across the application
   - Downloading data occurs on the main thread (triggers UI refresh)
   - `[weak self]` is used to avoid cases with strong references
   - MVVM architecture with custom models
   - Used this public **[API](https://jsonplaceholder.typicode.com/posts)**
-- ### temp
+- ### Combine
+  - Combine is new Apple framework that takes advantage of using publishers and subscribers
+  - `.dataTaskPublisher` structure basically the same as usual `.dataTask`, but has different logic:
+    1. create a publisher
+    2. subscribe publisher on background thread
+    3. receive on main thread
+    4. tryMap (check that the data is good)
+    5. decode (decode data into PostModels)
+    6. sink (put the item in the app)
+    7. store (cancel subscription if needed)
+  - `.dataTaskPublisher` has to be **cancellable**, because it publish values over time
+    ```swift
+    var cancellables = Set<AnyCancellable>()
+    ...
+    .store(in: &cancellables)
+    ```
+  - Separate `.tryMap` logic for cleaner code
+    ```swift
+    .tryMap(handleOutput)
+    ...
+    func handleOutput(output: URLSession.DataTaskPublisher.Output) throws -> Data {
+        guard
+            let response = output.response as? HTTPURLResponse,
+            response.statusCode >= 200 && response.statusCode < 300 else {
+            throw URLError(.badServerResponse)
+        }
+        return output.data
+    }
+    ```
+    Instead of this:
+    ```swift
+    .tryMap { data, response -> Data in
+        guard
+            let response = response as? HTTPURLResponse,
+            response.statusCode >= 200 && response.statusCode < 300 else {
+                throw URLError(.badServerResponse)
+        }
+        return data
+    }
+    ```
+  - `[weak self]` is used to avoid cases with strong references
+  - MVVM architecture with custom models
+  - Used this public **[API](https://jsonplaceholder.typicode.com/posts)**
+  
