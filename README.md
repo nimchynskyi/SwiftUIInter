@@ -299,4 +299,23 @@ Three ways to use escaping closure:
   - `[weak self]` is used to avoid cases with strong references
   - MVVM architecture with custom models
   - Used this public **[API](https://jsonplaceholder.typicode.com/posts)**
+
+## Timer & `.onReceive`
+> Timer is actually a publisher - object that publishes values over time and subsciber is needed to listen
+- Declare timer:
+  ```swift
+  let timer = Timer.publish(every: 1.0, on: .main, in: .common).autoconnect()
+  ```
+  And use on view:
+  ```swift
+  .onReceive(timer, perform: { _ in
+      updateTimeRemaining()
+  })
+  ```
+- Important to use `.autoconnect()` for timer to automatically connect and start
+- Examples of using Timer:
+  - Current Time
+  - Countdown
+  - Countdown to date in the future
+  - Animation counter
   
