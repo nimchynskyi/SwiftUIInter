@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87621CCA2B0BA0D900DE4171 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87621CC92B0BA0D900DE4171 /* Timer.swift */; };
 		87676D452AFE6C3400E73AB6 /* MultipleSheets2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87676D442AFE6C3400E73AB6 /* MultipleSheets2.swift */; };
 		87676D472AFE6C4500E73AB6 /* MultipleSheets3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87676D462AFE6C4500E73AB6 /* MultipleSheets3.swift */; };
 		87676D4A2AFE789800E73AB6 /* Mask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87676D492AFE789800E73AB6 /* Mask.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		87621CC92B0BA0D900DE4171 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		87676D442AFE6C3400E73AB6 /* MultipleSheets2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSheets2.swift; sourceTree = "<group>"; };
 		87676D462AFE6C4500E73AB6 /* MultipleSheets3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSheets3.swift; sourceTree = "<group>"; };
 		87676D492AFE789800E73AB6 /* Mask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mask.swift; sourceTree = "<group>"; };
@@ -90,6 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		87621CCB2B0BA0DB00DE4171 /* 14Timer */ = {
+			isa = PBXGroup;
+			children = (
+				87621CC92B0BA0D900DE4171 /* Timer.swift */,
+			);
+			path = 14Timer;
+			sourceTree = "<group>";
+		};
 		87676D482AFE6C5500E73AB6 /* 3MultipleSheets */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +180,7 @@
 				87E8AA232B09037E00A5F2D4 /* 11Escaping */,
 				87E8AA262B090D8100A5F2D4 /* 12Codable */,
 				87FCA9832B0A6E6B00B7AF59 /* 13DownloadJSON */,
+				87621CCB2B0BA0DB00DE4171 /* 14Timer */,
 				87D0EFCA2AFD3C7200EF1672 /* Assets.xcassets */,
 				87D0EFCC2AFD3C7200EF1672 /* Preview Content */,
 			);
@@ -341,6 +352,7 @@
 				87D0EFD72AFD462B00EF1672 /* MagnificationGesture.swift in Sources */,
 				87676D592AFEF03600E73AB6 /* Hashable.swift in Sources */,
 				87D0EFDD2AFD5DA900EF1672 /* DragGesture2.swift in Sources */,
+				87621CCA2B0BA0D900DE4171 /* Timer.swift in Sources */,
 				87FCA9822B0A5FB900B7AF59 /* DownloadEscaping.swift in Sources */,
 				87D0EFD92AFD54FB00EF1672 /* RotationGesture.swift in Sources */,
 				87676D452AFE6C3400E73AB6 /* MultipleSheets2.swift in Sources */,
