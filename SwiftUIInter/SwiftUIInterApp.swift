@@ -65,6 +65,8 @@ struct SwiftUIInterApp: App {
                         NavigationLink(destination: DownloadEscaping())             { Text("Download JSON w/ URLSession and @escaping") }
                         NavigationLink(destination: DownloadCombine())              { Text("Download JSON w/ Combine") }
                     }
+                    
+                    NavigationLink(destination: TimerView())                        { Text("Timer & .onReceive") }
                 }
                 .navigationTitle("SwiftUI Code DB")
             }
