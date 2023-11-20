@@ -51,14 +51,6 @@ class DownloadCombineViewModel: ObservableObject {
             .subscribe(on: DispatchQueue.global(qos: .background))  // already on. background by default, no need to do that
             .receive(on: DispatchQueue.main)                        // UI triggers MUST be on main thread
             .tryMap(handleOutput)
-//            .tryMap { data, response -> Data in
-//                guard
-//                    let response = response as? HTTPURLResponse,
-//                    response.statusCode >= 200 && response.statusCode < 300 else {
-//                    throw URLError(.badServerResponse)
-//                }
-//                return data
-//            }
             .decode(type: [PostModel].self, decoder: JSONDecoder()) // this is array [PostModel], not PostModel
             .replaceError(with: [])
             .sink (receiveValue: { [weak self] returnedPosts in
@@ -80,7 +72,6 @@ class DownloadCombineViewModel: ObservableObject {
 struct DownloadCombine: View {
     
     @StateObject var vm = DownloadCombineViewModel()
-    
     
     var body: some View {
         List {
