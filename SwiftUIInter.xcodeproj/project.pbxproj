@@ -20,6 +20,7 @@
 		87676D5C2AFEF66500E73AB6 /* Arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87676D5B2AFEF66500E73AB6 /* Arrays.swift */; };
 		878C08852B057A5E00C5A018 /* CoreDataRelationships.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878C08842B057A5E00C5A018 /* CoreDataRelationships.swift */; };
 		878C08882B057B9000C5A018 /* CoreDataContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 878C08862B057B9000C5A018 /* CoreDataContainer.xcdatamodeld */; };
+		87C127B72B0BCEE100BD1153 /* Subscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C127B62B0BCEE100BD1153 /* Subscriber.swift */; };
 		87D0EFC72AFD3C6F00EF1672 /* SwiftUIInterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0EFC62AFD3C6F00EF1672 /* SwiftUIInterApp.swift */; };
 		87D0EFCB2AFD3C7200EF1672 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87D0EFCA2AFD3C7200EF1672 /* Assets.xcassets */; };
 		87D0EFCE2AFD3C7200EF1672 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87D0EFCD2AFD3C7200EF1672 /* Preview Assets.xcassets */; };
@@ -57,6 +58,7 @@
 		87676D5B2AFEF66500E73AB6 /* Arrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arrays.swift; sourceTree = "<group>"; };
 		878C08842B057A5E00C5A018 /* CoreDataRelationships.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataRelationships.swift; sourceTree = "<group>"; };
 		878C08872B057B9000C5A018 /* CoreDataContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataContainer.xcdatamodel; sourceTree = "<group>"; };
+		87C127B62B0BCEE100BD1153 /* Subscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscriber.swift; sourceTree = "<group>"; };
 		87D0EFC32AFD3C6F00EF1672 /* SwiftUIInter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIInter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D0EFC62AFD3C6F00EF1672 /* SwiftUIInterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIInterApp.swift; sourceTree = "<group>"; };
 		87D0EFCA2AFD3C7200EF1672 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				87D0EFC62AFD3C6F00EF1672 /* SwiftUIInterApp.swift */,
+				87C127B62B0BCEE100BD1153 /* Subscriber.swift */,
 				87FB2C2F2AFD9D4000480B5C /* 1Gestures */,
 				87FB2C302AFD9D5500480B5C /* 2Readers */,
 				87676D482AFE6C5500E73AB6 /* 3MultipleSheets */,
@@ -371,6 +374,7 @@
 				87E8AA222B09001A00A5F2D4 /* Typealias.swift in Sources */,
 				87FB08032B02E69500D757B2 /* FruitsContainer.xcdatamodeld in Sources */,
 				87E8AA1C2B08DD2200A5F2D4 /* BackgroundThread.swift in Sources */,
+				87C127B72B0BCEE100BD1153 /* Subscriber.swift in Sources */,
 				87FB2C322AFD9DB000480B5C /* GeometryReader.swift in Sources */,
 				87DA48DF2AFE651F009C5A66 /* GeometryReader2.swift in Sources */,
 				87676D5C2AFEF66500E73AB6 /* Arrays.swift in Sources */,
