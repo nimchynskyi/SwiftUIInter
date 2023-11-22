@@ -59,13 +59,13 @@ class SubscriberViewModel: ObservableObject {
                 self.count += 1
                 
                 // cancel when reach 10s
-                /*
+                
                 if self.count >= 10 {
                     for item in self.cancellables { // to cancel everything in set cancellables
                         item.cancel() // trigger cancel using cancellable
                     }
                 }
-                */
+                
             }
             .store(in: &cancellables)
     }

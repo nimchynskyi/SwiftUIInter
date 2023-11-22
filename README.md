@@ -229,7 +229,7 @@
 ## Weak Self
 
 - Mark tasks that are not important, so they have the abillity to deinitialize
-- Very important if the app has tons of calls
+- Very important if the app has tons of API/DB calls
 - For example:
   - This data will be alive and ready to be shown without being deinitialized for 500 seconds. It gathers over time and number of such tasks can be huge which leads to slowdowns.
 
@@ -246,6 +246,12 @@
             self?.data = "some data"
       }
       ```
+
+  - 🚨 Safely unwrap `self` so it is no longer optional(no need to write `self?.xxxx`)
+
+    ```swift
+    guard let self = self else { return }
+    ```
 
 ## Typealias
 
