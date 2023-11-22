@@ -467,11 +467,31 @@ Three ways to use escaping closure:
 
 - Always store publisher in cancellables, like this `.store(in: &cancellables)` to be able cancel stored activities or actions.
   > Frees up any allocated resources and also stops side effects such as timers, network access, or disk I/O.
+
+  For example, cancel timer when it reacher 10 seconds:
+
+  ```swift
+  .sink { [weak self] _ in
+      guard let self = self else { return }
+                
+      self.count += 1
+                
+      if self.count >= 10 {
+          for item in self.cancellables {
+              item.cancel() 
+          }
+      }        
+  }
+  ```
+
 - In this particular example single cancellable is okay and there is no need to `.store(...)`
 
   ```swift
-  // good for one publisher, just assign timer = Timer ..., no need to .store(...)
-    // var timer: AnyCancellable?
+  var timer: AnyCancellable?
+  timer = Timer
+      .publish(...)
+      .autoconnect()
+      .sink { ... }
   ```
 
 - Example on checking text field character count
