@@ -67,6 +67,8 @@ struct SwiftUIInterApp: App {
                     }
                     
                     NavigationLink(destination: TimerView())                        { Text("Timer & .onReceive") }
+                    
+                    NavigationLink(destination: SubscriberView())                   { Text("Subscriber") }
                 }
                 .navigationTitle("SwiftUI Code DB")
             }
