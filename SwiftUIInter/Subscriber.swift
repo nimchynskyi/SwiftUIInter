@@ -12,18 +12,18 @@ class SubscriberViewModel: ObservableObject {
     
     // @Published setting up a publisher - publish values over time
     @Published var count: Int = 0
-    // good for one publisher, just assign timer = Timer ..., no need to .store(...)
-    // var timer: AnyCancellable?
-
-    // can .store(...) multiple
-    var cancellables = Set<AnyCancellable>()
-    
+    @Published var showButton: Bool = false
     @Published var textIsValid: Bool = false
     @Published var textFieldText: String = ""
     // every time this gets updated (in view, when user types) - it is publishing new value 
     // (like timer e.g. updated every 1 second it publishes value and i am able to run functions every 1 second)
     
-    @Published var showButton: Bool = false
+    
+    // good for one publisher, just assign timer = Timer ..., no need to .store(...)
+    // var timer: AnyCancellable?
+
+    // can .store(...) multiple
+    var cancellables = Set<AnyCancellable>()
     
     init() {
         setUpTimer()
