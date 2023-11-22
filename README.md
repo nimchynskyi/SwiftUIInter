@@ -320,4 +320,46 @@ Three ways to use escaping closure:
   - Animation counter
  
 ## Subscriber
+- Combine framework & MVVM architecture
+- Combine two publishers with `.combineLatest()` and use `.sink()` to manage logic.\
+  For example, there are two `@Published` variables:
+  ```swift
+  @Published var count: Int = 0
+  @Published var textIsValid: Bool = false
+  ```
+  I can combine them like this:
+  ```swift
+   $textIsValid
+      .combineLatest($count)
+  ```
+  And then proceed adding some logic with `.sink()`:
+  ```swift
+  $textIsValid
+      .combineLatest($count)
+      .sink { [weak self] isValid, count in
+          guard let self = self else { return }
+          if isValid && count >= 10 {
+              self.showButton = true
+          } else {
+              self.showButton = false
+          }
+      }
+  ```
+  `.sink()` initializer will have two `receiveValue`s - `(Published<Bool>.Publisher.Output, Published<Int>.Publisher.Output)`)\
+  It's based on previous `.combine()`, in this example they are `Bool`(`textIsValid`) and `Int`(`count`).
+- 🚨 If app logic is complex use `.debounce()`. Useful in scenarios such as API/DB calls, search etc.\
+  This will start "notifying" subsribers about changes only after user stopped typing and 0.5 seconds passed
+  ```swift
+  $textFieldText
+      .debounce(for: .seconds(0.5), scheduler: DispatchQueue.main)
+      ...
+  ```
+- Always store publisher in cancellables, like this `.store(in: &cancellables)` to be able cancel stored activities or actions.\
+  Frees up any allocated resources and also stops side effects such as timers, network access, or disk I/O.
+- In this particular example single cancellable is okay and there is no need to `.store(...)`
+  ```swift
+  // good for one publisher, just assign timer = Timer ..., no need to .store(...)
+    // var timer: AnyCancellable?
+  ```
+- Example on checking text field character count
   
