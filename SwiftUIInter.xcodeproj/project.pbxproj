@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		872C3A502B114C3D0092D8AD /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872C3A4F2B114C3D0092D8AD /* FileManager.swift */; };
 		87621CCA2B0BA0D900DE4171 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87621CC92B0BA0D900DE4171 /* Timer.swift */; };
 		87676D452AFE6C3400E73AB6 /* MultipleSheets2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87676D442AFE6C3400E73AB6 /* MultipleSheets2.swift */; };
 		87676D472AFE6C4500E73AB6 /* MultipleSheets3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87676D462AFE6C4500E73AB6 /* MultipleSheets3.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		872C3A4F2B114C3D0092D8AD /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		87621CC92B0BA0D900DE4171 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		87676D442AFE6C3400E73AB6 /* MultipleSheets2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSheets2.swift; sourceTree = "<group>"; };
 		87676D462AFE6C4500E73AB6 /* MultipleSheets3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSheets3.swift; sourceTree = "<group>"; };
@@ -94,6 +96,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		872C3A512B114C3F0092D8AD /* 17SavingData */ = {
+			isa = PBXGroup;
+			children = (
+				872C3A4F2B114C3D0092D8AD /* FileManager.swift */,
+			);
+			path = 17SavingData;
+			sourceTree = "<group>";
+		};
 		87621CCB2B0BA0DB00DE4171 /* 14Timer */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +202,7 @@
 				87FCA9832B0A6E6B00B7AF59 /* 13DownloadJSON */,
 				87621CCB2B0BA0DB00DE4171 /* 14Timer */,
 				877248702B0EBA8400C96E2D /* 15Subscriber */,
+				872C3A512B114C3F0092D8AD /* 17SavingData */,
 				87D0EFCA2AFD3C7200EF1672 /* Assets.xcassets */,
 				87D0EFCC2AFD3C7200EF1672 /* Preview Content */,
 			);
@@ -367,6 +378,7 @@
 				87FCA9822B0A5FB900B7AF59 /* DownloadEscaping.swift in Sources */,
 				87D0EFD92AFD54FB00EF1672 /* RotationGesture.swift in Sources */,
 				87676D452AFE6C3400E73AB6 /* MultipleSheets2.swift in Sources */,
+				872C3A502B114C3D0092D8AD /* FileManager.swift in Sources */,
 				87DA48E12AFE690A009C5A66 /* MultipleSheets.swift in Sources */,
 				87D0EFC72AFD3C6F00EF1672 /* SwiftUIInterApp.swift in Sources */,
 				878C08852B057A5E00C5A018 /* CoreDataRelationships.swift in Sources */,

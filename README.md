@@ -290,7 +290,7 @@ Three ways to use escaping closure:
   func downloadData(completionHandler: @escaping (DownloadResult) -> ()) {
     ...
   }
-  
+
   struct DownloadResult {
     let data: String
   }
@@ -302,14 +302,14 @@ Three ways to use escaping closure:
   func downloadData(completionHandler: @escaping DownloadCompletion) {
     ...
   }
-  
+
   struct DownloadResult {
     let data: String
   }
-  
+
   typealias DownloadCompletion = (DownloadResult) -> ()
   ```
-  
+
 ## Codable, Decodable and Encodable
 
 ### 🚨 *Codable = Decodable + Encodable*
@@ -473,14 +473,14 @@ Three ways to use escaping closure:
   ```swift
   .sink { [weak self] _ in
       guard let self = self else { return }
-                
+
       self.count += 1
-                
+
       if self.count >= 10 {
           for item in self.cancellables {
-              item.cancel() 
+              item.cancel()
           }
-      }        
+      }
   }
   ```
 
@@ -495,4 +495,11 @@ Three ways to use escaping closure:
   ```
 
 - Example on checking text field character count
-  
+
+## Saving data
+
+### FileManager
+
+- Great for videos, images, audifiles, JSON data etc.
+- Use sparingly as all data is saved on user's device
+- Example on saing images
