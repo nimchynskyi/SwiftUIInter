@@ -502,4 +502,64 @@ Three ways to use escaping closure:
 
 - Great for videos, images, audifiles, JSON data etc.
 - Use sparingly as all data is saved on user's device
-- Example on saing images
+- When downloading images from internet, it's better to save them in the FileManager
+- Singleton `LocalFileManager` class to manage data between views etc. (Any in-appscreen can read from/save to File Manager)
+- Save different types of images:
+
+  ```swift
+    // jpg
+    guard let data = image.jpegData(compressionQuality: 1.0) else {
+        print("Error getting data.")
+        return
+    }
+
+    // png
+    guard let data = image.pngData( ... )
+  ```
+
+- 3 most common directories to save a file to:
+
+  ```swift
+    // user-generated content (will be auto backed up by iCloud)
+    let directory1 = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+
+    // files that can be regenerated, e.g. cache
+    let directory2 = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask)
+
+    // temp files
+    let directory3 = FileManager.default.temporaryDirectory
+  ```
+
+    Example directories paths on my device:
+
+    ```swift
+    // directory1
+    file:///var/mobile/Containers/Data/Application/79C3FE28-3CA9-40BD-BBC9-A7E37335B4A5/Documents/
+
+    // directory2
+    file:///var/mobile/Containers/Data/Application/79C3FE28-3CA9-40BD-BBC9-A7E37335B4A5/Library/Caches/
+
+    // directory3
+    file:///private/var/mobile/Containers/Data/Application/79C3FE28-3CA9-40BD-BBC9-A7E37335B4A5/tmp/
+    ```
+
+- Complete `saveImage` function:
+
+```swift
+  func saveImage(image: UIImage, name: String) {
+
+      guard
+          let data = image.jpegData(compressionQuality: 1.0),
+          let path = getPathForImage(name: name) else {
+          print("Error getting data.")
+          return
+      }
+
+      do {
+          try data.write(to: path)
+          print("Success saving!")
+      } catch let error {
+          print("Error saving. \(error)")
+      }
+  }
+```
