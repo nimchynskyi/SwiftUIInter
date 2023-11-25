@@ -11,20 +11,18 @@ class LocalFileManager {
     
     static let instance = LocalFileManager()
     
-    func saveImage(image: UIImage, name: String) {
-        
-        guard 
+    func saveImage(image: UIImage, name: String) -> String {
+        guard
             let data = image.jpegData(compressionQuality: 1.0),
             let path = getPathForImage(name: name) else {
-            print("Error getting data.")
-            return
+            return "Error getting data."
         }
         
         do {
             try data.write(to: path)
-            print("Success saving!")
+            return "Success saving!"
         } catch let error {
-            print("Error saving. \(error)")
+            return "Error saving. \(error)"
         }
     }
     
@@ -37,6 +35,21 @@ class LocalFileManager {
         }
         
         return UIImage(contentsOfFile: path)
+    }
+    
+    func deleteImage(name: String) -> String {
+        guard
+            let path = getPathForImage(name: name),
+            FileManager.default.fileExists(atPath: path.path) else {
+            return "Error getting path."
+        }
+        
+        do {
+            try FileManager.default.removeItem(at: path)
+            return "Successfully deleted"
+        } catch let error {
+            return "Error deleting image. \(error)"
+        }
     }
     
     func getPathForImage(name: String) -> URL? {
@@ -57,6 +70,8 @@ class LocalFileManager {
 class FileManagerViewModel: ObservableObject {
     
     @Published var image: UIImage? = nil
+    @Published var infoMessage: String = ""
+    
     let imageName: String = "iphone-xr-in-hand"
     let manager = LocalFileManager.instance
     
@@ -75,7 +90,11 @@ class FileManagerViewModel: ObservableObject {
     
     func saveImage() {
         guard let image = image else { return }
-        manager.saveImage(image: image, name: imageName)
+        infoMessage = manager.saveImage(image: image, name: imageName)
+    }
+    
+    func deleteImage() {
+        infoMessage = manager.deleteImage(name: imageName)
     }
 }
 
@@ -96,15 +115,34 @@ struct FileManagerView: View {
                         .clipShape(.rect(cornerRadius: 10))
                 }
                 
-                Button {
-                    vm.saveImage()
-                } label: {
-                    Text("Save to FileManager")
-                        .font(.headline)
-                        .padding()
+                HStack {
+                    Button {
+                        vm.saveImage()
+                    } label: {
+                        Text("Save to FileManager")
+                            .font(.headline)
+                            .padding()
+                            .padding(.horizontal)
+                    }
+                    .buttonStyle(.borderedProminent)
+                    
+                    Button {
+                        vm.deleteImage()
+                    } label: {
+                        Text("Delete from FileManager")
+                            .font(.headline)
+                            .padding()
+                            .padding(.horizontal)
+                    }
+                    .buttonStyle(.bordered)
+                    .tint(.red)
                 }
-                .buttonStyle(.borderedProminent)
-
+                
+                Text(vm.infoMessage)
+                    .font(.largeTitle)
+                    .fontWeight(.semibold)
+                    .foregroundStyle(.purple)
+                
                 Spacer()
             }
             .navigationTitle("File Manager")
