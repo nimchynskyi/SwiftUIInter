@@ -564,10 +564,35 @@ Three ways to use escaping closure:
   }
   ```
 
-- Create folders, very useful and practical to categorize items.
+- Delete image:
+
+  ```swift
+  func deleteImage(name: String) -> String {
+      guard
+          let path = getPathForImage(name: name)?.path,
+          FileManager.default.fileExists(atPath: path) else {
+          return "Error getting path."
+      }
+
+      do {
+          try FileManager.default.removeItem(atPath: path)
+          return "Successfully deleted"
+      } catch let error {
+          return "Error deleting image. \(error)"
+      }
+  }
+  ```
+
+- Create folder:
 
   ```swift
   try FileManager.default.createDirectory(atPath: path, withIntermediateDirectories: true)
   ```
 
   <img width="1076" alt="Screenshot 2023-11-26 at 16 07 53" src="https://github.com/fsociety010101/SwiftUIInter/assets/59197830/35998350-75a8-448b-8b9e-e9513377cc37">
+
+- Delete folder:
+
+  ```swift
+  try FileManager.default.removeItem(atPath: path)
+  ```
