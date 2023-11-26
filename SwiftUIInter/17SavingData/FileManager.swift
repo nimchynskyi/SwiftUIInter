@@ -35,7 +35,24 @@ class LocalFileManager {
                 print("Error creating folder. \(error)")
             }
         }
-        
+    }
+    
+    func deleteFolder() {
+        guard
+            let path = FileManager
+                .default
+                .urls(for: .cachesDirectory, in: .userDomainMask)
+                .first?
+                .appending(path: folderName)
+                .path else {
+            return
+        }
+        do {
+            try FileManager.default.removeItem(atPath: path)
+            print("Success deleting folder.")
+        } catch let error {
+            print("Error deleting folder. \(error)")
+        }
     }
     
     func saveImage(image: UIImage, name: String) -> String {
@@ -67,13 +84,13 @@ class LocalFileManager {
     
     func deleteImage(name: String) -> String {
         guard
-            let path = getPathForImage(name: name),
-            FileManager.default.fileExists(atPath: path.path) else {
+            let path = getPathForImage(name: name)?.path,
+            FileManager.default.fileExists(atPath: path) else {
             return "Error getting path."
         }
         
         do {
-            try FileManager.default.removeItem(at: path)
+            try FileManager.default.removeItem(atPath: path)
             return "Successfully deleted"
         } catch let error {
             return "Error deleting image. \(error)"
@@ -124,6 +141,7 @@ class FileManagerViewModel: ObservableObject {
     
     func deleteImage() {
         infoMessage = manager.deleteImage(name: imageName)
+        manager.deleteFolder()
     }
 }
 
