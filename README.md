@@ -507,27 +507,27 @@ Three ways to use escaping closure:
 - Save different types of images:
 
   ```swift
-    // jpg
-    guard let data = image.jpegData(compressionQuality: 1.0) else {
-        print("Error getting data.")
-        return
-    }
+  // jpg
+  guard let data = image.jpegData(compressionQuality: 1.0) else {
+      print("Error getting data.")
+      return
+  }
 
-    // png
-    guard let data = image.pngData( ... )
+  // png
+  guard let data = image.pngData( ... )
   ```
 
 - 3 most common directories to save a file to:
 
   ```swift
-    // user-generated content (will be auto backed up by iCloud)
-    let directory1 = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+  // user-generated content (will be auto backed up by iCloud)
+  let directory1 = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
 
-    // files that can be regenerated, e.g. cache
-    let directory2 = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask)
+  // files that can be regenerated, e.g. cache
+  let directory2 = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask)
 
-    // temp files
-    let directory3 = FileManager.default.temporaryDirectory
+  // temp files
+  let directory3 = FileManager.default.temporaryDirectory
   ```
 
     Example directories paths on my device:
@@ -546,28 +546,28 @@ Three ways to use escaping closure:
 - Save images:
 
   ```swift
-    func saveImage(image: UIImage, name: String) {
+  func saveImage(image: UIImage, name: String) {
 
-        guard
-            let data = image.jpegData(compressionQuality: 1.0),
-            let path = getPathForImage(name: name) else {
-            print("Error getting data.")
-            return
-        }
+      guard
+          let data = image.jpegData(compressionQuality: 1.0),
+          let path = getPathForImage(name: name) else {
+          print("Error getting data.")
+          return
+      }
 
-        do {
-            try data.write(to: path)
-            print("Success saving!")
-        } catch let error {
-            print("Error saving. \(error)")
-        }
-    }
+      do {
+          try data.write(to: path)
+          print("Success saving!")
+      } catch let error {
+          print("Error saving. \(error)")
+      }
+  }
   ```
 
 - Create folders, very useful and practical to categorize items.
 
   ```swift
-    try FileManager.default.createDirectory(atPath: path, withIntermediateDirectories: true)
+  try FileManager.default.createDirectory(atPath: path, withIntermediateDirectories: true)
   ```
-  <img width="1076" alt="Screenshot 2023-11-26 at 16 07 53" src="https://github.com/fsociety010101/SwiftUIInter/assets/59197830/35998350-75a8-448b-8b9e-e9513377cc37">
 
+  <img width="1076" alt="Screenshot 2023-11-26 at 16 07 53" src="https://github.com/fsociety010101/SwiftUIInter/assets/59197830/35998350-75a8-448b-8b9e-e9513377cc37">
