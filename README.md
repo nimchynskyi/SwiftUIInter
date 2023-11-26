@@ -543,23 +543,29 @@ Three ways to use escaping closure:
     file:///private/var/mobile/Containers/Data/Application/79C3FE28-3CA9-40BD-BBC9-A7E37335B4A5/tmp/
     ```
 
-- Complete `saveImage` function:
+- Save images:
 
-```swift
-  func saveImage(image: UIImage, name: String) {
+  ```swift
+    func saveImage(image: UIImage, name: String) {
 
-      guard
-          let data = image.jpegData(compressionQuality: 1.0),
-          let path = getPathForImage(name: name) else {
-          print("Error getting data.")
-          return
-      }
+        guard
+            let data = image.jpegData(compressionQuality: 1.0),
+            let path = getPathForImage(name: name) else {
+            print("Error getting data.")
+            return
+        }
 
-      do {
-          try data.write(to: path)
-          print("Success saving!")
-      } catch let error {
-          print("Error saving. \(error)")
-      }
-  }
-```
+        do {
+            try data.write(to: path)
+            print("Success saving!")
+        } catch let error {
+            print("Error saving. \(error)")
+        }
+    }
+  ```
+
+- Create folders, very useful and practical to categorize items.
+
+  ```swift
+    try FileManager.default.createDirectory(atPath: path, withIntermediateDirectories: true)
+  ```
