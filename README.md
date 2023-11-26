@@ -569,3 +569,5 @@ Three ways to use escaping closure:
   ```swift
     try FileManager.default.createDirectory(atPath: path, withIntermediateDirectories: true)
   ```
+  <img width="1076" alt="Screenshot 2023-11-26 at 16 07 53" src="https://github.com/fsociety010101/SwiftUIInter/assets/59197830/35998350-75a8-448b-8b9e-e9513377cc37">
+
