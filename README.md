@@ -612,3 +612,13 @@ Three ways to use escaping closure:
 
 - Full functionality with saving, deleting and getting data from cache
 
+### Download & cache data
+
+- Mini-application built with technologies/frameworks:
+  - Codable
+  - Combine
+  - Publishers & Subscribers
+  - FileManager
+  - NSCache
+  - Background threads
+  - `[weak self]`
