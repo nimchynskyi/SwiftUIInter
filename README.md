@@ -596,3 +596,19 @@ Three ways to use escaping closure:
   ```swift
   try FileManager.default.removeItem(atPath: path)
   ```
+
+### Caching
+
+- Image caching using `NSCache<NSString, UIImage>` with custom items limit and items size limit:
+
+  ```swift
+  var imageCache: NSCache<NSString, UIImage> = {
+      let cache = NSCache<NSString, UIImage>()
+      cache.countLimit = 100 // limit max number of items stored, try to keep as low as possible
+      cache.totalCostLimit = 1024 * 1024 * 100 // 100mb
+      return cache
+  }()
+  ```
+
+- Full functionality with saving, deleting and getting data from cache
+
