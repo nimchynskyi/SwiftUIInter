@@ -20,14 +20,14 @@ class CacheManager {
         return cache
     }()
     
-    func add(image: UIImage, name: String) {
+    func add(image: UIImage, name: String) -> String{
         imageCache.setObject(image, forKey: name as NSString)
-        print("Added to cache!")
+        return "Added to cache!"
     }
     
-    func remove(name: String) {
+    func remove(name: String) -> String{
         imageCache.removeObject(forKey: name as NSString)
-        print("Removed from cache!")
+        return "Removed from cache!"
     }
     
     func get(name: String) -> UIImage? {
@@ -39,6 +39,8 @@ class CachingViewModel: ObservableObject {
     
     @Published var startingImage: UIImage? = nil
     @Published var cachedImage: UIImage? = nil
+    @Published var infoMessage: String = ""
+    
     let imageName: String = "iphone-xr-in-hand"
     let manager = CacheManager.instance
     
@@ -52,15 +54,21 @@ class CachingViewModel: ObservableObject {
     
     func saveToCache() {
         guard let image = startingImage else { return }
-        manager.add(image: image, name: imageName)
+        infoMessage = manager.add(image: image, name: imageName)
     }
     
     func removeFromCache() {
-        manager.remove(name: imageName)
+        infoMessage = manager.remove(name: imageName)
     }
     
     func getFromCache() {
-        cachedImage = manager.get(name: imageName)
+        
+        if let returnedImage = manager.get(name: imageName) {
+            cachedImage = returnedImage
+            infoMessage = "Got image from Cache"
+        } else {
+            infoMessage = "Image not found in Cache"
+        }
     }
 }
 
@@ -80,45 +88,58 @@ struct Caching: View {
                         .clipShape(.rect(cornerRadius: 10))
                 }
                 
-                HStack(spacing: 20) {
+                Text(vm.infoMessage)
+                    .font(.headline)
+                    .foregroundStyle(.purple)
+                
+                HStack {
                     Button(action: {
                         vm.saveToCache()
                     }, label: {
                         Text("Save to cache")
                             .font(.headline.bold())
-                            .foregroundColor(.white)
+                            .foregroundStyle(.white)
+                            .frame(height: 60)
+                            .frame(maxWidth: .infinity)
+                            .background(.blue)
+                            .clipShape(.buttonBorder)
                     })
-                    .frame(height: 60)
-                    .frame(maxWidth: .infinity)
-                    .background(.blue)
-                    .clipShape(.buttonBorder)
                     
                     Button(action: {
                         vm.removeFromCache()
                     }, label: {
                         Text("Delete from cache")
                             .font(.headline.bold())
-                            .foregroundColor(.red)
+                            .foregroundStyle(.white)
+                            .frame(height: 60)
+                            .frame(maxWidth: .infinity)
+                            .background(.red)
+                            .clipShape(.buttonBorder)
                     })
-                    .frame(height: 60)
-                    .frame(maxWidth: .infinity)
-                    .background(.red.opacity(0.3))
-                    .clipShape(.buttonBorder)
                 }
                 .padding(.horizontal, 20)
                 
                 Button(action: {
-                    vm.removeFromCache()
+                    vm.getFromCache()
                 }, label: {
                     Text("Get from cache")
                         .font(.headline.bold())
                         .foregroundColor(.green)
+                        .frame(height: 60)
+                        .frame(maxWidth: .infinity)
+                        .background(.green.opacity(0.3))
+                        .clipShape(.buttonBorder)
+                        .padding(.horizontal, 20)
                 })
-                .frame(height: 60)
-                .frame(maxWidth: .infinity)
-                .background(.green.opacity(0.3))
-                .clipShape(.buttonBorder)
-                .padding(.horizontal, 20)
+                
+                if let image = vm.cachedImage {
+                    Image(uiImage: image)
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 200, height: 200)
+                        .clipped()
+                        .clipShape(.rect(cornerRadius: 10))
+                }
                 
                 Spacer()
             }
