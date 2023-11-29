@@ -533,13 +533,13 @@ Three ways to use escaping closure:
     Example directories paths on my device:
 
     ```swift
-    // directory1
+    // directory1 - /Documents
     file:///var/mobile/Containers/Data/Application/79C3FE28-3CA9-40BD-BBC9-A7E37335B4A5/Documents/
 
-    // directory2
+    // directory2 - /Library/Caches
     file:///var/mobile/Containers/Data/Application/79C3FE28-3CA9-40BD-BBC9-A7E37335B4A5/Library/Caches/
 
-    // directory3
+    // directory3 - /tmp
     file:///private/var/mobile/Containers/Data/Application/79C3FE28-3CA9-40BD-BBC9-A7E37335B4A5/tmp/
     ```
 
