@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8723483F2B1922560035A32C /* ImageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8723483E2B1922560035A32C /* ImageRow.swift */; };
+		872348412B1922C20035A32C /* ImageCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872348402B1922C20035A32C /* ImageCircle.swift */; };
+		872348432B1923320035A32C /* ImageLoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872348422B1923320035A32C /* ImageLoadingViewModel.swift */; };
 		872C3A502B114C3D0092D8AD /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872C3A4F2B114C3D0092D8AD /* FileManager.swift */; };
 		87621CCA2B0BA0D900DE4171 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87621CC92B0BA0D900DE4171 /* Timer.swift */; };
 		87676D452AFE6C3400E73AB6 /* MultipleSheets2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87676D442AFE6C3400E73AB6 /* MultipleSheets2.swift */; };
@@ -51,6 +54,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8723483E2B1922560035A32C /* ImageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRow.swift; sourceTree = "<group>"; };
+		872348402B1922C20035A32C /* ImageCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCircle.swift; sourceTree = "<group>"; };
+		872348422B1923320035A32C /* ImageLoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoadingViewModel.swift; sourceTree = "<group>"; };
 		872C3A4F2B114C3D0092D8AD /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		87621CC92B0BA0D900DE4171 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		87676D442AFE6C3400E73AB6 /* MultipleSheets2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSheets2.swift; sourceTree = "<group>"; };
@@ -202,6 +208,8 @@
 			isa = PBXGroup;
 			children = (
 				87CE1DE12B14E534005863C7 /* DownloadImage.swift */,
+				8723483E2B1922560035A32C /* ImageRow.swift */,
+				872348402B1922C20035A32C /* ImageCircle.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -210,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				87CE1DE52B14E860005863C7 /* DownloadImageViewModel.swift */,
+				872348422B1923320035A32C /* ImageLoadingViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -438,11 +447,14 @@
 				87DA48E12AFE690A009C5A66 /* MultipleSheets.swift in Sources */,
 				87D0EFC72AFD3C6F00EF1672 /* SwiftUIInterApp.swift in Sources */,
 				87CE1DE62B14E860005863C7 /* DownloadImageViewModel.swift in Sources */,
+				872348412B1922C20035A32C /* ImageCircle.swift in Sources */,
+				8723483F2B1922560035A32C /* ImageRow.swift in Sources */,
 				878C08852B057A5E00C5A018 /* CoreDataRelationships.swift in Sources */,
 				878C08882B057B9000C5A018 /* CoreDataContainer.xcdatamodeld in Sources */,
 				87E8AA252B09039800A5F2D4 /* Escaping.swift in Sources */,
 				87FCA9852B0A6F1F00B7AF59 /* DownloadCombine.swift in Sources */,
 				87D0EFD52AFD3CB300EF1672 /* LongPressGesture.swift in Sources */,
+				872348432B1923320035A32C /* ImageLoadingViewModel.swift in Sources */,
 				87FB08002B02E54200D757B2 /* CoreData.swift in Sources */,
 				87676D472AFE6C4500E73AB6 /* MultipleSheets3.swift in Sources */,
 				87676D572AFE8CE100E73AB6 /* LocalNotifications.swift in Sources */,
