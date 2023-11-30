@@ -15,7 +15,7 @@ struct DownloadImage: View {
         NavigationStack {
             List {
                 ForEach(vm.dataArray) { model in
-                    
+                    ImageRow(model: model)
                 }
             }
             .navigationTitle("Downloading Images")

@@ -16,7 +16,6 @@ struct ImageCircle: View {
         _loader =  StateObject(wrappedValue: ImageLoadingViewModel(url: url))
     }
     
-    
     var body: some View {
         ZStack {
             if loader.isLoading {

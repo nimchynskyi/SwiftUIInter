@@ -13,7 +13,7 @@ struct ImageRow: View {
     
     var body: some View {
         HStack {
-            Circle()
+            ImageCircle(url: model.url)
                 .frame(width: 75, height: 75)
             
             VStack(alignment: .leading) {
@@ -30,7 +30,7 @@ struct ImageRow: View {
 }
 
 #Preview {
-    ImageRow(model: PhotoModel(albumId: 1, id: 1, title: "test", url: "url", thumbnailUrl: "thumbnailUrl"))
+    ImageRow(model: PhotoModel(albumId: 1, id: 1, title: "test", url: "https://via.placeholder.com/600/92c952", thumbnailUrl: "https://via.placeholder.com/600/92c952"))
         .padding()
         .previewLayout(.sizeThatFits)
 }
