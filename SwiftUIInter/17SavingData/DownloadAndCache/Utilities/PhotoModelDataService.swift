@@ -14,12 +14,12 @@ class PhotoModelDataService {
     @Published var photoModels: [PhotoModel] = []
     var cancellables = Set<AnyCancellable>()
     
+    // private to have only one insatance
     private init() {
         downloadData()
-    } // to have only one insatance
+    }
     
     func downloadData() {
-        
         guard let url = URL(string: "https://jsonplaceholder.typicode.com/photos") else { return }
         
         URLSession.shared.dataTaskPublisher(for: url)
@@ -38,7 +38,6 @@ class PhotoModelDataService {
                 self?.photoModels = returnedPhotoModels
             }
             .store(in: &cancellables)
-
     }
     
     private func handleOutput(output: URLSession.DataTaskPublisher.Output) throws -> Data {
