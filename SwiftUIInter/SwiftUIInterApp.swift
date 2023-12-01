@@ -51,15 +51,17 @@ struct SwiftUIInterApp: App {
                         NavigationLink(destination: CoreDataRelationships())        { Text("Core Data Relationships") }
                     }
                     
-                    NavigationLink(destination: BackgroundThread())                 { Text("Background Threads") }
-                    
-                    NavigationLink(destination: WeakSelf())                         { Text("[weak self]") }
-                    
-                    NavigationLink(destination: Typealias())                        { Text("typealias") }
-                    
-                    NavigationLink(destination: Escaping())                         { Text("@escaping") }
-                    
-                    NavigationLink(destination: CodableView())                      { Text("Codable") }
+                    Section(header: Text("Memory managment")) {
+                        NavigationLink(destination: BackgroundThread())                 { Text("Background Threads") }
+                        
+                        NavigationLink(destination: WeakSelf())                         { Text("[weak self]") }
+                        
+                        NavigationLink(destination: Typealias())                        { Text("typealias") }
+                        
+                        NavigationLink(destination: Escaping())                         { Text("@escaping") }
+                        
+                        NavigationLink(destination: CodableView())                      { Text("Codable") }
+                    }
                     
                     Section(header: Text("Combine")) {
                         NavigationLink(destination: DownloadEscaping())             { Text("Download JSON w/ URLSession and @escaping") }
