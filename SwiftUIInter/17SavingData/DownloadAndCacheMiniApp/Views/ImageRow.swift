@@ -13,7 +13,7 @@ struct ImageRow: View {
     
     var body: some View {
         HStack {
-            ImageCircle(url: model.url)
+            ImageCircle(url: model.url, key: "\(model.id)")
                 .frame(width: 75, height: 75)
             
             VStack(alignment: .leading) {
