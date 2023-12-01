@@ -71,6 +71,8 @@ struct SwiftUIInterApp: App {
                     NavigationLink(destination: SubscriberView())                   { Text("Subscriber") }
                     
                     NavigationLink(destination: FileManagerView())                  { Text("File Manager") }
+                    
+                    NavigationLink(destination: ImageApp())                         { Text("Image download&cache mini-app") }
 
                 }
                 .navigationTitle("SwiftUI Code DB")
