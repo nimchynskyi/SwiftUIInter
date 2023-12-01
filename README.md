@@ -628,3 +628,15 @@ Three ways to use escaping closure:
   - `PhotoModel` and `PhotoModelDataService`(Singleton, stroring publisher image array, cancellable) to retrieve images from the server
   - Main entry view `ImageAppViewModel` and separate `ImageLoadingViewModel` to download images
   - Images redownloading when out of screen without cache implemenation
+
+- Caching images:
+  - Using `NSCache<NSString, UIImage>`:
+    - Using more memory(~250mb in this application)
+    - Doesn't persist data during sessions
+    - Better to use in this example(5,000 images that are probably not relevant for a user)
+
+  - Using FileManager:
+    - Using less memory(~50mb in this application)
+    - Persists data during sessions
+    - Custom path, name & format
+    - Best for persisting data such as user profile picture, images on the main view of the application etc.
