@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-class DownloadImageViewModel: ObservableObject {
+class ImageAppViewModel: ObservableObject {
     
     @Published var dataArray: [PhotoModel] = []
     // can ref dataService and put in its cancellables but much better to separate

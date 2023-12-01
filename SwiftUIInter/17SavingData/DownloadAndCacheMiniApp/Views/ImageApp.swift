@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct DownloadImage: View {
+struct ImageApp: View {
     
-    @StateObject var vm = DownloadImageViewModel()
+    @StateObject var vm = ImageAppViewModel()
     
     var body: some View {
         NavigationStack {
@@ -24,5 +24,5 @@ struct DownloadImage: View {
 }
 
 #Preview {
-    DownloadImage()
+    ImageApp()
 }

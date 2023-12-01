@@ -26,9 +26,9 @@
 		878C08882B057B9000C5A018 /* CoreDataContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 878C08862B057B9000C5A018 /* CoreDataContainer.xcdatamodeld */; };
 		87A16D7A2B139CF100317A1B /* Caching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A16D792B139CF100317A1B /* Caching.swift */; };
 		87C127B72B0BCEE100BD1153 /* Subscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C127B62B0BCEE100BD1153 /* Subscriber.swift */; };
-		87CE1DE22B14E534005863C7 /* DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CE1DE12B14E534005863C7 /* DownloadImage.swift */; };
+		87CE1DE22B14E534005863C7 /* ImageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CE1DE12B14E534005863C7 /* ImageApp.swift */; };
 		87CE1DE42B14E7EF005863C7 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CE1DE32B14E7EF005863C7 /* PhotoModel.swift */; };
-		87CE1DE62B14E860005863C7 /* DownloadImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CE1DE52B14E860005863C7 /* DownloadImageViewModel.swift */; };
+		87CE1DE62B14E860005863C7 /* ImageAppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CE1DE52B14E860005863C7 /* ImageAppViewModel.swift */; };
 		87CE1DE82B14E919005863C7 /* PhotoModelDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CE1DE72B14E919005863C7 /* PhotoModelDataService.swift */; };
 		87D0EFC72AFD3C6F00EF1672 /* SwiftUIInterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0EFC62AFD3C6F00EF1672 /* SwiftUIInterApp.swift */; };
 		87D0EFCB2AFD3C7200EF1672 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87D0EFCA2AFD3C7200EF1672 /* Assets.xcassets */; };
@@ -73,9 +73,9 @@
 		878C08872B057B9000C5A018 /* CoreDataContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataContainer.xcdatamodel; sourceTree = "<group>"; };
 		87A16D792B139CF100317A1B /* Caching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caching.swift; sourceTree = "<group>"; };
 		87C127B62B0BCEE100BD1153 /* Subscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscriber.swift; sourceTree = "<group>"; };
-		87CE1DE12B14E534005863C7 /* DownloadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImage.swift; sourceTree = "<group>"; };
+		87CE1DE12B14E534005863C7 /* ImageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageApp.swift; sourceTree = "<group>"; };
 		87CE1DE32B14E7EF005863C7 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
-		87CE1DE52B14E860005863C7 /* DownloadImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageViewModel.swift; sourceTree = "<group>"; };
+		87CE1DE52B14E860005863C7 /* ImageAppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAppViewModel.swift; sourceTree = "<group>"; };
 		87CE1DE72B14E919005863C7 /* PhotoModelDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModelDataService.swift; sourceTree = "<group>"; };
 		87D0EFC32AFD3C6F00EF1672 /* SwiftUIInter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIInter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D0EFC62AFD3C6F00EF1672 /* SwiftUIInterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIInterApp.swift; sourceTree = "<group>"; };
@@ -117,7 +117,7 @@
 			children = (
 				872C3A4F2B114C3D0092D8AD /* FileManager.swift */,
 				87A16D792B139CF100317A1B /* Caching.swift */,
-				87CE1DDC2B14E4D6005863C7 /* DownloadAndCache */,
+				87CE1DDC2B14E4D6005863C7 /* DownloadAndCacheMiniApp */,
 			);
 			path = 17SavingData;
 			sourceTree = "<group>";
@@ -185,7 +185,7 @@
 			path = 15Subscriber;
 			sourceTree = "<group>";
 		};
-		87CE1DDC2B14E4D6005863C7 /* DownloadAndCache */ = {
+		87CE1DDC2B14E4D6005863C7 /* DownloadAndCacheMiniApp */ = {
 			isa = PBXGroup;
 			children = (
 				87CE1DDE2B14E4EB005863C7 /* Views */,
@@ -193,7 +193,7 @@
 				87CE1DDD2B14E4E3005863C7 /* Models */,
 				87CE1DE02B14E514005863C7 /* Utilities */,
 			);
-			path = DownloadAndCache;
+			path = DownloadAndCacheMiniApp;
 			sourceTree = "<group>";
 		};
 		87CE1DDD2B14E4E3005863C7 /* Models */ = {
@@ -207,7 +207,7 @@
 		87CE1DDE2B14E4EB005863C7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				87CE1DE12B14E534005863C7 /* DownloadImage.swift */,
+				87CE1DE12B14E534005863C7 /* ImageApp.swift */,
 				8723483E2B1922560035A32C /* ImageRow.swift */,
 				872348402B1922C20035A32C /* ImageCircle.swift */,
 			);
@@ -217,7 +217,7 @@
 		87CE1DDF2B14E4F1005863C7 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				87CE1DE52B14E860005863C7 /* DownloadImageViewModel.swift */,
+				87CE1DE52B14E860005863C7 /* ImageAppViewModel.swift */,
 				872348422B1923320035A32C /* ImageLoadingViewModel.swift */,
 			);
 			path = ViewModels;
@@ -446,7 +446,7 @@
 				872C3A502B114C3D0092D8AD /* FileManager.swift in Sources */,
 				87DA48E12AFE690A009C5A66 /* MultipleSheets.swift in Sources */,
 				87D0EFC72AFD3C6F00EF1672 /* SwiftUIInterApp.swift in Sources */,
-				87CE1DE62B14E860005863C7 /* DownloadImageViewModel.swift in Sources */,
+				87CE1DE62B14E860005863C7 /* ImageAppViewModel.swift in Sources */,
 				872348412B1922C20035A32C /* ImageCircle.swift in Sources */,
 				8723483F2B1922560035A32C /* ImageRow.swift in Sources */,
 				878C08852B057A5E00C5A018 /* CoreDataRelationships.swift in Sources */,
@@ -466,7 +466,7 @@
 				87FB08032B02E69500D757B2 /* FruitsContainer.xcdatamodeld in Sources */,
 				87E8AA1C2B08DD2200A5F2D4 /* BackgroundThread.swift in Sources */,
 				87C127B72B0BCEE100BD1153 /* Subscriber.swift in Sources */,
-				87CE1DE22B14E534005863C7 /* DownloadImage.swift in Sources */,
+				87CE1DE22B14E534005863C7 /* ImageApp.swift in Sources */,
 				87FB2C322AFD9DB000480B5C /* GeometryReader.swift in Sources */,
 				87DA48DF2AFE651F009C5A66 /* GeometryReader2.swift in Sources */,
 				87676D5C2AFEF66500E73AB6 /* Arrays.swift in Sources */,
