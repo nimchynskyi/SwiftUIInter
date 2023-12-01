@@ -622,3 +622,9 @@ Three ways to use escaping closure:
   - NSCache
   - Background threads
   - `[weak self]`
+
+- Downloading images:
+  - Combine framework
+  - `PhotoModel` and `PhotoModelDataService`(Singleton, stroring publisher image array, cancellable) to retrieve images from the server
+  - Main entry view `ImageAppViewModel` and separate `ImageLoadingViewModel` to download images
+  - Images redownloading when out of screen without cache implemenation
