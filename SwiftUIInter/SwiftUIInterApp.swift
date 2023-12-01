@@ -61,19 +61,23 @@ struct SwiftUIInterApp: App {
                     
                     NavigationLink(destination: CodableView())                      { Text("Codable") }
                     
-                    Section(header: Text("JSON Download & APIs")) {
+                    Section(header: Text("Combine")) {
                         NavigationLink(destination: DownloadEscaping())             { Text("Download JSON w/ URLSession and @escaping") }
+                        
                         NavigationLink(destination: DownloadCombine())              { Text("Download JSON w/ Combine") }
+                        
+                        NavigationLink(destination: TimerView())                    { Text("Timer & .onReceive") }
+                        
+                        NavigationLink(destination: SubscriberView())               { Text("Subscriber") }
                     }
                     
-                    NavigationLink(destination: TimerView())                        { Text("Timer & .onReceive") }
-                    
-                    NavigationLink(destination: SubscriberView())                   { Text("Subscriber") }
-                    
-                    NavigationLink(destination: FileManagerView())                  { Text("File Manager") }
-                    
-                    NavigationLink(destination: ImageApp())                         { Text("Image download&cache mini-app") }
-
+                    Section(header: Text("FileManager and Cache")) {
+                        NavigationLink(destination: FileManagerView())                  { Text("File Manager") }
+                        
+                        NavigationLink(destination: Caching())                          { Text("Caching") }
+                        
+                        NavigationLink(destination: ImageApp())                         { Text("Image download & cache mini-app") }
+                    }
                 }
                 .navigationTitle("SwiftUI Code DB")
             }
