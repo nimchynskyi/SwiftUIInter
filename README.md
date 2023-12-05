@@ -676,3 +676,7 @@ Ways to address
 
 - `.truncationMode()` lets to set where to truncate the line of text - `.tail`, `.head` or `.middle`
 - If system image/logo needs to be fixed size, use `.font(.system(size: ... ))`
+
+UI with different accessibility dynamic type variants:
+
+  <img width="600" alt="image" src="https://github.com/fsociety010101/SwiftUIInter/assets/59197830/c53e3f40-8c18-4c39-8acd-dc6bc750985f">
