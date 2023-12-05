@@ -650,3 +650,6 @@ This is an example of good UI on smalleer iPhone SE without Dynamic Type enabled
   <img width="528" alt="image" src="https://github.com/fsociety010101/SwiftUIInter/assets/59197830/64578e6f-ebed-4953-b2fc-09f6e283e7f1">
 
 This is the same UI, but this time Dynamic Type is set to AX 5:
+
+  <img width="528" alt="image" src="https://github.com/fsociety010101/SwiftUIInter/assets/59197830/9db94d38-af3a-4e08-ac07-e2b6fcc2aca7">
+
