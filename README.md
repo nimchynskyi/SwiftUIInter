@@ -640,3 +640,8 @@ Three ways to use escaping closure:
     - Persists data during sessions
     - Custom path, name & format
     - Best for persisting data such as user profile picture, images on the main view of the application etc.
+
+### Accessibility
+## Dynamic Text
+<img width="528" alt="image" src="https://github.com/fsociety010101/SwiftUIInter/assets/59197830/64578e6f-ebed-4953-b2fc-09f6e283e7f1">
+
