@@ -51,7 +51,7 @@ struct SwiftUIInterApp: App {
                         NavigationLink(destination: CoreDataRelationships())        { Text("Core Data Relationships") }
                     }
                     
-                    Section(header: Text("Memory managment")) {
+                    Section(header: Text("Memory management")) {
                         NavigationLink(destination: BackgroundThread())                 { Text("Background Threads") }
                         
                         NavigationLink(destination: WeakSelf())                         { Text("[weak self]") }
@@ -63,7 +63,7 @@ struct SwiftUIInterApp: App {
                         NavigationLink(destination: CodableView())                      { Text("Codable") }
                     }
                     
-                    Section(header: Text("Combine")) {
+                    Section(header: Text("Combine & URLSession")) {
                         NavigationLink(destination: DownloadEscaping())             { Text("Download JSON w/ URLSession and @escaping") }
                         
                         NavigationLink(destination: DownloadCombine())              { Text("Download JSON w/ Combine") }
@@ -79,6 +79,10 @@ struct SwiftUIInterApp: App {
                         NavigationLink(destination: Caching())                          { Text("Caching") }
                         
                         NavigationLink(destination: ImageApp())                         { Text("Image download & cache mini-app") }
+                    }
+                    
+                    Section(header: Text("Accessibility")) {
+                        
                     }
                 }
                 .navigationTitle("SwiftUI Code DB")
