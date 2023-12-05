@@ -653,3 +653,26 @@ This is the same UI, but this time Dynamic Type is set to AX 5:
 
   <img width="528" alt="image" src="https://github.com/fsociety010101/SwiftUIInter/assets/59197830/9db94d38-af3a-4e08-ac07-e2b6fcc2aca7">
 
+Ways to address
+
+- Avoid fixed sizes. Use `.maxWidth`,`.maxHeight`, `.padding()`, `spacing:` etc.
+- Use `.lineLimit()`
+- Set custom `.minimumScaleFactor(sizeCategory.customMinScaleFactor)` with the help of `ContentSizeCategory` extension:
+
+  ```swift
+  extension ContentSizeCategory {
+      var customMinScaleFactor: CGFloat {
+          switch self {
+          case .extraSmall, .small, .medium:
+              return 1.0
+          case .large, .extraLarge, .extraExtraLarge:
+              return 0.8
+          default:
+              return 0.6
+          }
+      }
+  }
+  ```
+
+- `.truncationMode()` lets to set where to truncate the line of text - `.tail`, `.head` or `.middle`
+- If system image/logo needs to be fixed size, use `.font(.system(size: ... ))`
